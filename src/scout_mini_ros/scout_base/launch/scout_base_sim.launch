@@ -1,0 +1,42 @@
+<launch>
+    <!-- 
+        The robot can be controlled either through CAN bus or UART port. Make sure the hardware
+        interface is set up correctly before attempting to connect to the robot.
+        
+        You only need to specify the port name, such as "can0", "/dev/ttyUSB0". The port should 
+        operate with the following configuration:
+        
+        * CAN bus: 500k
+        * UART: 115200, Parity None, 8-bit Data, 1 Stop Bit 
+    -->
+    <arg name="simulated_robot" default="true" />
+    <arg name="control_rate" default="50" />
+
+    <node name="scout_base_sim_node" pkg="scout_base" type="scout_base_sim_node" output="screen">
+        <param name="simulated_robot" type="bool" value="$(arg simulated_robot)" />
+        <param name="control_rate" type="int" value="$(arg control_rate)" />
+
+        <param name="odom_frame" type="string" value="odom" />
+        <param name="base_frame" type="string" value="base_link" />
+    </node>
+
+    <!-- TODO: depthimage_to_laserscan node -->
+    <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
+        <remap from="image" to="/camera/depth/image_raw"/>
+        <remap from="camera_info" to="/camera/depth/camera_info"/>
+        <remap from="scan" to="/scan"/>
+        <param name="range_max" type="double" value="4"/>
+        <param name="output_frame_id" type="string" value="fake_laser"/>
+    </node>
+    <!-- 配置TF树，否则雷达无法正常使用（frame doesn't exist） 
+    pkg：包名，tf
+    type：类型，static_transform_publisher
+    name：名称，自定，便于理解
+    arg：tf参数， x y z yaw pitch roll frame_id child_frame_id period_in_ms.
+    1.x y z 分别代表着相应轴的平移，单位是 米。
+    2.yaw pitch roll 分别代表着绕z y x 三个轴的转动，单位是 弧度。
+    3.frame_id 为坐标系变换中的父坐标系， child_frame_id为坐标系变换中的子坐标系。
+    4.period_in_ms 为发布频率，单位为 毫秒。通常取100。一毫秒为一秒的千分之一，100毫秒即为0.1秒，也就是10Hz。-->
+    <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" 
+    args="0.0 0.0 0.0 0.0 0.0 0.0 /camera_link /fake_laser 100" />
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel
+
+Name: scout_msgs
+Description: Description of scout_msgs
+Version: 0.3.3
+Cflags: -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/install
+
+Name: scout_description
+Description: Description of scout_description
+Version: 0.4.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel
+
+Name: realsense2_camera
+Description: Description of realsense2_camera
+Version: 2.2.22
+Cflags: -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include
+Libs: -L${prefix}/lib -lrealsense2_camera
+Requires: message_runtime roscpp sensor_msgs std_msgs nodelet cv_bridge image_transport ddynamic_reconfigure nav_msgs

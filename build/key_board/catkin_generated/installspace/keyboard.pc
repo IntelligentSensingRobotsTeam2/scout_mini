@@ -1,0 +1,8 @@
+prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/install
+
+Name: keyboard
+Description: Description of keyboard
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: sensor_msgs roscpp geometry_msgs

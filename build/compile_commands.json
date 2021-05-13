@@ -1,0 +1,122 @@
+[
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_sdk",
+  "command": "/usr/bin/c++  -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_sdk\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src  -fPIC   -std=c++11 -o CMakeFiles/scout_sdk.dir/src/scout_base.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/scout_base.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/scout_base.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_sdk",
+  "command": "/usr/bin/cc -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_sdk\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src  -fPIC   -std=c++11 -o CMakeFiles/scout_sdk.dir/src/scout_protocol/scout_can_parser.c.o   -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/scout_protocol/scout_can_parser.c",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/scout_protocol/scout_can_parser.c"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_sdk",
+  "command": "/usr/bin/cc -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_sdk\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src  -fPIC   -std=c++11 -o CMakeFiles/scout_sdk.dir/src/scout_protocol/scout_uart_parser.c.o   -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/scout_protocol/scout_uart_parser.c",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/scout_protocol/scout_uart_parser.c"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_sdk",
+  "command": "/usr/bin/c++  -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_sdk\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src  -fPIC   -std=c++11 -o CMakeFiles/scout_sdk.dir/src/async_io/async_serial.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/async_io/async_serial.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/async_io/async_serial.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_sdk",
+  "command": "/usr/bin/c++  -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_sdk\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src  -fPIC   -std=c++11 -o CMakeFiles/scout_sdk.dir/src/async_io/async_can.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/async_io/async_can.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/async_io/async_can.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_sdk",
+  "command": "/usr/bin/c++  -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_sdk\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src  -fPIC   -std=c++11 -o CMakeFiles/scout_sdk.dir/src/async_io/asyncio_utils.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/async_io/asyncio_utils.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/src/async_io/asyncio_utils.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/key_board",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"keyboard\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/key_board/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp    -std=c++11 -o CMakeFiles/keyboard_node.dir/src/keyboard.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/key_board/src/keyboard.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/key_board/src/keyboard.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_base",
+  "command": "/usr/bin/c++  -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_base\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio    -std=c++11 -o CMakeFiles/scout_base_sim_node.dir/src/scout_base_sim_node.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/src/scout_base_sim_node.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/src/scout_base_sim_node.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_base",
+  "command": "/usr/bin/c++  -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_base\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio  -fPIC   -std=c++11 -o CMakeFiles/scout_messenger.dir/src/scout_messenger.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/src/scout_messenger.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/src/scout_messenger.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_base",
+  "command": "/usr/bin/c++  -DASIO_ENABLE_OLD_SERVICES -DASIO_HAS_POSIX_STREAM_DESCRIPTOR -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_base\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/asio    -std=c++11 -o CMakeFiles/scout_base_node.dir/src/scout_base_node.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/src/scout_base_node.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/src/scout_base_node.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_gazebo_sim",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_gazebo_sim\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_gazebo_sim/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp    -std=c++11 -o CMakeFiles/scout_gazebo.dir/src/scout_skid_steer.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_gazebo_sim/src/scout_skid_steer.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_gazebo_sim/src/scout_skid_steer.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/scout_mini_ros/scout_gazebo_sim",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"scout_gazebo_sim\\\" -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_gazebo_sim/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp    -std=c++11 -o CMakeFiles/scout_skid_steer_controller.dir/src/scout_skid_steer_controller.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_gazebo_sim/src/scout_skid_steer_controller.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_gazebo_sim/src/scout_skid_steer_controller.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/realsense-ros-2.2.22/realsense2_camera",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense2_camera\\\" -D_CRT_SECURE_NO_WARNINGS -Drealsense2_camera_EXPORTS -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv  -fPIE -fPIC -std=c++11 -D_FORTIFY_SOURCE=2 -fstack-protector -Wformat -Wformat-security -Wall -O2  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/src/realsense_node_factory.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/src/realsense_node_factory.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/realsense-ros-2.2.22/realsense2_camera",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense2_camera\\\" -D_CRT_SECURE_NO_WARNINGS -Drealsense2_camera_EXPORTS -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv  -fPIE -fPIC -std=c++11 -D_FORTIFY_SOURCE=2 -fstack-protector -Wformat -Wformat-security -Wall -O2  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/src/base_realsense_node.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/src/base_realsense_node.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/realsense-ros-2.2.22/realsense2_camera",
+  "command": "/usr/bin/c++  -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense2_camera\\\" -D_CRT_SECURE_NO_WARNINGS -Drealsense2_camera_EXPORTS -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/include -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/opencv  -fPIE -fPIC -std=c++11 -D_FORTIFY_SOURCE=2 -fstack-protector -Wformat -Wformat-security -Wall -O2  -O3 -DNDEBUG -fPIC   -std=c++11 -o CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/src/t265_realsense_node.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense-ros-2.2.22/realsense2_camera/src/t265_realsense_node.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/realsense_gazebo_plugin",
+  "command": "/usr/bin/c++  -DLIBBULLET_VERSION=2.87 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense_gazebo_plugin\\\" -Drealsense_gazebo_plugin_EXPORTS -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense_gazebo_plugin/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/gazebo-9 -isystem /usr/include/bullet -isystem /usr/include/simbody -isystem /usr/include/sdformat-6.0 -isystem /usr/include/ignition/math4 -isystem /usr/include/OGRE -isystem /usr/include/OGRE/Terrain -isystem /usr/include/OGRE/Paging -isystem /usr/include/ignition/transport4 -isystem /usr/include/ignition/msgs1 -isystem /usr/include/ignition/common1 -isystem /usr/include/ignition/fuel_tools1 -isystem /usr/include/uuid -isystem /usr/include/x86_64-linux-gnu   -std=c++11 -fPIC   -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu -std=gnu++14 -o CMakeFiles/realsense_gazebo_plugin.dir/src/RealSensePlugin.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense_gazebo_plugin/src/RealSensePlugin.cpp"
+},
+{
+  "directory": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/build/realsense_gazebo_plugin",
+  "command": "/usr/bin/c++  -DLIBBULLET_VERSION=2.87 -DLIBBULLET_VERSION_GT_282 -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"realsense_gazebo_plugin\\\" -Drealsense_gazebo_plugin_EXPORTS -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense_gazebo_plugin/include -isystem /opt/ros/melodic/include -isystem /opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/include/gazebo-9 -isystem /usr/include/bullet -isystem /usr/include/simbody -isystem /usr/include/sdformat-6.0 -isystem /usr/include/ignition/math4 -isystem /usr/include/OGRE -isystem /usr/include/OGRE/Terrain -isystem /usr/include/OGRE/Paging -isystem /usr/include/ignition/transport4 -isystem /usr/include/ignition/msgs1 -isystem /usr/include/ignition/common1 -isystem /usr/include/ignition/fuel_tools1 -isystem /usr/include/uuid -isystem /usr/include/x86_64-linux-gnu   -std=c++11 -fPIC   -I/usr/include/uuid -I/usr/include/x86_64-linux-gnu -std=gnu++14 -o CMakeFiles/realsense_gazebo_plugin.dir/src/gazebo_ros_realsense.cpp.o -c /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp",
+  "file": "/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/realsense_gazebo_plugin/src/gazebo_ros_realsense.cpp"
+}
+]

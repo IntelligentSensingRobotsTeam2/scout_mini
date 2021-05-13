@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="keyboard" type="keyboard_node" name="keyboard_node" args="" output="screen" >
+    </node>
+</launch>

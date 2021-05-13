@@ -1,0 +1,2 @@
+key_board:realsense-ros-2.2.22/realsense2_camera:realsense-ros-2.2.22/realsense2_description:realsense_gazebo_plugin:scout_mini_ros/scout_2dnav:scout_mini_ros/scout_base:scout_mini_ros/scout_bringup:scout_mini_ros/scout_description:scout_mini_ros/scout_gazebo_sim:scout_mini_ros/scout_msgs:scout_mini_ros/scout_ros:scout_mini_ros/scout_sdk
+-DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCATKIN_DEVEL_PREFIX=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel
+
+Name: scout_base
+Description: Description of scout_base
+Version: 0.3.3
+Cflags: -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_base/include
+Libs: -L${prefix}/lib -lscout_messenger
+Requires: scout_msgs roscpp sensor_msgs scout_sdk

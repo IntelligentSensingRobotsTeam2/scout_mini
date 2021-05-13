@@ -72,7 +72,7 @@
   <arg name="rgbd_depth_scale" default="$(arg depth_scale)" />
   <arg name="rgbd_decimation" default="1" />
   <!-- TODO: use fake scan -->
-  <arg name="subscribe_scan" default="false"/>
+  <arg name="subscribe_scan" default="true"/>
   <arg name="scan_topic" default="/scan"/>
   <!-- use filtered cloud from icp_odometry for mapping -->
 
@@ -206,6 +206,13 @@
       <param name="subscribe_scan" type="bool" value="$(arg subscribe_scan)"/>
       <param name="subscribe_user_data" type="bool" value="$(arg subscribe_user_data)"/>
       <param if="$(arg visual_odometry)" name="subscribe_odom_info" type="bool" value="true"/>
+
+      <!-- use actionlib to send goals to move_base -->
+      <param name="use_action_for_goal" type="bool" value="true"/>
+      <remap from="move_base" to="/move_base"/>
+      <!-- output -->
+      <remap from="grid_map" to="/map"/>
+
       <param name="frame_id" type="string" value="$(arg frame_id)"/>
       <param name="map_frame_id" type="string" value="$(arg map_frame_id)"/>
       <param name="odom_frame_id" type="string" value="$(arg odom_frame_id)"/>
@@ -218,6 +225,8 @@
       <param name="wait_for_transform_duration" type="double" value="$(arg wait_for_transform)"/>
       <param name="database_path" type="string" value="$(arg database_path)"/>
       <param name="approx_sync" type="bool" value="$(arg approx_sync)"/>
+      <!-- Here, we need to sync the RGB-D and laser, so use approx_sync (true) -->
+      <!-- <param name="approx_sync" type="bool" value="$(arg approx_sync)"/> -->
       <param name="config_path" type="string" value="$(arg cfg)"/>
       <param name="queue_size" type="int" value="$(arg queue_size)"/>
       <param name="landmark_linear_variance" type="double" value="$(arg tag_linear_variance)"/>

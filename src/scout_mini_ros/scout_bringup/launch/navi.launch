@@ -1,0 +1,7 @@
+<launch>
+
+  <!-- move_base -->
+  <include file="$(find scout_2dnav)/launch/move_base.launch">
+  </include>
+
+</launch>

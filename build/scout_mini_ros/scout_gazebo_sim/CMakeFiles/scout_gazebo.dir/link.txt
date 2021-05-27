@@ -1,2 +1,0 @@
-/usr/bin/ar qc /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/lib/libscout_gazebo.a  CMakeFiles/scout_gazebo.dir/src/scout_skid_steer.cpp.o
-/usr/bin/ranlib /home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel/lib/libscout_gazebo.a

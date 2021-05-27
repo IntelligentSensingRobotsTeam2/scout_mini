@@ -3,7 +3,7 @@ raytrace_range: 3.0
 footprint: [[-0.29, -0.28], [-0.29, 0.28], [0.29, 0.28], [0.29, -0.28]] #scout_mini
 #robot_radius: ir_of_robot
 # robot_radius: 0.25  # xbot
-inflation_radius: 0.3
+inflation_radius: 0.1
 
 observation_sources: laser_scan_sensor
 

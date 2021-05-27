@@ -1,8 +1,0 @@
-prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/install
-
-Name: scout_gazebo_sim
-Description: Description of scout_gazebo_sim
-Version: 0.0.1
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: roscpp sensor_msgs

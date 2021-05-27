@@ -1,8 +1,0 @@
-prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel
-
-Name: scout_sdk
-Description: Description of scout_sdk
-Version: 0.0.0
-Cflags: -I/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_sdk/include
-Libs: -L${prefix}/lib -lscout_sdk
-Requires: roscpp std_msgs

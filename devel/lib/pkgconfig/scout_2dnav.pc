@@ -1,8 +1,0 @@
-prefix=/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/devel
-
-Name: scout_2dnav
-Description: Description of scout_2dnav
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

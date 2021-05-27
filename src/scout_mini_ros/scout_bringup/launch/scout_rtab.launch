@@ -254,7 +254,8 @@
       <param name="RGBD/ProximityBySpace" type="string" value="false"/>
       <param name="RGBD/AngularUpdate" type="string" value="0.01"/>
       <param name="RGBD/LinearUpdate" type="string" value="0.01"/>
-      <param name="RGBD/OptimizeFromGraphEnd" type="string" value="false"/>
+      <!-- prefer to set it to true for navigation (all is relative to the current position of the robot) -->
+      <param name="RGBD/OptimizeFromGraphEnd" type="string" value="true"/>
       <param name="Reg/Force3DoF" type="string" value="true"/>
       <param name="Vis/MinInliers" type="string" value="12"/>
     </node>

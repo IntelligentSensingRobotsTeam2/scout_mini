@@ -32,14 +32,23 @@
     <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera" args="0.1 0.0 0.25 0.0 0.0 0.0 /base_link /camera_link 20" />
 
     <!-- 生成伪激光信息，因为move_base导航必须要有激光信息-->
-    <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
+    <!-- <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
         <remap from="image" to="/camera/depth/image_rect_raw"/>
         <remap from="camera_info" to="/camera/depth/camera_info"/>
         <remap from="scan" to="/scan"/>
         <param name="range_max" type="double" value="4"/>
         <param name="output_frame_id" type="string" value="fake_laser"/>
+    </node> -->
+    <node name="rplidarNode" pkg="rplidar_ros" type="rplidarNode" output="screen">
+        <param name="serial_port" type="string" value="/dev/ttyUSB0"/>
+        <param name="serial_baudrate" type="int" value="115200"/>
+        <!--A1/A2 -->
+        <param name="frame_id" type="string" value="laser"/>
+        <param name="inverted" type="bool" value="false"/>
+        <param name="angle_compensate" type="bool" value="true"/>
     </node>
 
-    <!-- 伪激光信息绑定到深度相机的camera_link上 -->    
-    <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" args="0.0 0.0 0.0 0.0 0.0 0.0 /camera_link /fake_laser 20" />
+    <!-- 伪激光信息绑定到深度相机的camera_link上 -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" args="0.0 0.0 0.0 0.0 0.0 0.0 /camera_link /fake_laser 20" /> -->
+    <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" args="0.0 0.0 0.0 0.0 0.0 0.0 /camera_link /laser 20" />
 </launch>

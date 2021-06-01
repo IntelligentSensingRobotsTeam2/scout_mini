@@ -1,5 +1,5 @@
 <launch>
-  <!-- 用于scout mini的仿真调试 -->
+  <!-- 用于scout mini的实车调试 -->
   <!-- subscribe_depth/rgb will be enabled if depth is true -->
   <arg name="depth" default="true"/>
 

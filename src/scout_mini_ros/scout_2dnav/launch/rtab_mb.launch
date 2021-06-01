@@ -6,7 +6,7 @@
 
     <!-- Choose visualization -->
     <arg name="rtabmapviz" default="true" />
-    <arg name="rviz" default="true" />
+    <arg name="rviz" default="false" />
 
     <!-- Localization-only mode -->
     <arg name="localization" default="false"/>
@@ -34,8 +34,8 @@
     <arg name="ground_truth_base_frame_id" default=""/>
     <!-- e.g., "tracker", a fake frame matching the frame "frame_id" (but on different TF tree) -->
     <arg name="namespace" default="rtabmap"/>
-    <!-- <arg name="database_path" default="~/.ros/rtabmap.db"/> -->
-    <arg name="database_path" default="/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/apr21_1053.db"/>
+    <arg name="database_path" default="~/.ros/rtabmap.db"/>
+    <!-- <arg name="database_path" default="/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/apr21_1053.db"/> -->
     <arg name="queue_size" default="50"/>
     <arg name="wait_for_transform" default="0.2"/>
     <arg name="args" default=""/>
@@ -297,7 +297,7 @@
 
 
     <!-- move_base -->
-    <include file="$(find scout_2dnav)/launch/move_base.launch">
-    </include>
+    <!-- <include file="$(find scout_2dnav)/launch/move_base.launch">
+    </include> -->
 
 </launch>

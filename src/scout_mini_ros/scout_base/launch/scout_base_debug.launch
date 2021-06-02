@@ -29,7 +29,9 @@
         2.yaw pitch roll 分别代表着绕z y x 三个轴的转动，单位是 弧度。
         3.frame_id 为坐标系变换中的父坐标系， child_frame_id为坐标系变换中的子坐标系。
         4.period_in_ms 为发布频率，单位为 毫秒。通常取100。一毫秒为一秒的千分之一，100毫秒即为0.1秒，也就是10Hz。20毫秒即50Hz-->
-    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera" args="0.1 0.0 0.25 0.0 0.0 0.0 /base_link /camera_link 20" />
+    <!-- <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera" args="0.1 0.0 0.25 0.0 0.0 0.0 /base_link /camera_link 20" /> -->
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_camera" 
+        args="0.075 0.0 0.3255 0.0 0.0 0.0 /base_link /camera_link 20" />
 
     <!-- 生成伪激光信息，因为move_base导航必须要有激光信息-->
     <!-- <node pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" name="depthimage_to_laserscan">
@@ -48,7 +50,11 @@
         <param name="angle_compensate" type="bool" value="true"/>
     </node>
 
+    <!-- 开启 D435 -->
+    <include file="$(find realsense2_camera)/launch/rs_camera.launch" />
+
     <!-- 伪激光信息绑定到深度相机的camera_link上 -->
     <!-- <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" args="0.0 0.0 0.0 0.0 0.0 0.0 /camera_link /fake_laser 20" /> -->
-    <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" args="0.0 0.0 0.0 0.0 0.0 0.0 /camera_link /laser 20" />
+    <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" 
+        args="0.175 0.0 0.07785 0.0 0.0 0.0 /camera_link /laser 20" />
 </launch>

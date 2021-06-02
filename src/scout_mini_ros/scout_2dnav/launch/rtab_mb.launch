@@ -2,7 +2,7 @@
     <!-- 用于scout mini的仿真调试，使用rtabmap做定位器并与move base联动 -->
     <!-- 机器人需要在 scout_launch 包中启动，本文件只负责启动rtabmap + move_base -->
     <!-- subscribe_depth/rgb will be enabled if depth is true -->
-    <arg name="depth"  default="true"/>
+    <arg name="depth" default="true"/>
 
     <!-- Choose visualization -->
     <arg name="rtabmapviz" default="true" />

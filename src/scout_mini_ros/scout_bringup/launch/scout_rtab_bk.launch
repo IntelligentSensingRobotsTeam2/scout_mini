@@ -1,3 +1,4 @@
+<!-- 06.01备份 -->
 <launch>
   <!-- 用于scout mini的实车调试 -->
   <!-- subscribe_depth/rgb will be enabled if depth is true -->
@@ -136,20 +137,21 @@
   <!-- RTABMAP Nodes -->
   <group ns="$(arg namespace)">
 
+    <!-- relays -->
+    <group if="$(arg depth)">
 
-
-    <group if="$(arg rgbd_sync)">
-      <node pkg="nodelet" type="nodelet" name="rgbd_sync" args="standalone rtabmap_ros/rgbd_sync" output="$(arg output)">
-        <remap from="rgb/image" to="$(arg rgb_topic_relay)"/>
-        <remap from="depth/image" to="$(arg depth_topic_relay)"/>
-        <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
-        <remap from="rgbd_image" to="$(arg rgbd_topic_relay)"/>
-        <!-- TODO: This should be false for D435 -->
-        <param name="approx_sync" type="bool" value="$(arg approx_rgbd_sync)"/>
-        <param name="queue_size" type="int" value="$(arg queue_size)"/>
-        <param name="depth_scale" type="double" value="$(arg rgbd_depth_scale)"/>
-        <param name="decimation" type="double" value="$(arg rgbd_decimation)"/>
-      </node>
+      <group if="$(arg rgbd_sync)">
+        <node pkg="nodelet" type="nodelet" name="rgbd_sync" args="standalone rtabmap_ros/rgbd_sync" output="$(arg output)">
+          <remap from="rgb/image" to="$(arg rgb_topic_relay)"/>
+          <remap from="depth/image" to="$(arg depth_topic_relay)"/>
+          <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
+          <remap from="rgbd_image" to="$(arg rgbd_topic_relay)"/>
+          <param name="approx_sync" type="bool" value="$(arg approx_rgbd_sync)"/>
+          <param name="queue_size" type="int" value="$(arg queue_size)"/>
+          <param name="depth_scale" type="double" value="$(arg rgbd_depth_scale)"/>
+          <param name="decimation" type="double" value="$(arg rgbd_decimation)"/>
+        </node>
+      </group>
     </group>
 
     <group unless="$(arg rgbd_sync)">
@@ -199,13 +201,12 @@
     <!-- rtabmap Visual SLAM (robot side) -->
     <!-- args: "delete_db_on_start" and "udebug" -->
     <node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="$(arg output)" args="$(arg rtabmap_args)" launch-prefix="$(arg launch_prefix)">
-      <!-- Set subscribe_depth to false because we subscribe rgbd-->
-      <param name="subscribe_depth" type="bool" value="false"/>
-      <!-- <param name="subscribe_rgb" type="bool" value="$(arg depth)"/> -->
+      <param name="subscribe_depth" type="bool" value="$(arg depth)"/>
+      <param name="subscribe_rgb" type="bool" value="$(arg depth)"/>
       <param name="subscribe_rgbd" type="bool" value="$(arg subscribe_rgbd)"/>
       <param name="subscribe_scan" type="bool" value="$(arg subscribe_scan)"/>
       <param name="subscribe_user_data" type="bool" value="$(arg subscribe_user_data)"/>
-      <!-- <param if="$(arg visual_odometry)" name="subscribe_odom_info" type="bool" value="true"/> -->
+      <param if="$(arg visual_odometry)" name="subscribe_odom_info" type="bool" value="true"/>
 
       <!-- use actionlib to send goals to move_base -->
       <param name="use_action_for_goal" type="bool" value="true"/>
@@ -232,9 +233,9 @@
       <param name="landmark_linear_variance" type="double" value="$(arg tag_linear_variance)"/>
       <param name="landmark_angular_variance" type="double" value="$(arg tag_angular_variance)"/>
 
-      <!-- <remap from="rgb/image" to="$(arg rgb_topic_relay)"/>
+      <remap from="rgb/image" to="$(arg rgb_topic_relay)"/>
       <remap from="depth/image" to="$(arg depth_topic_relay)"/>
-      <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/> -->
+      <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
 
       <remap from="rgbd_image" to="$(arg rgbd_topic_relay)"/>
 
@@ -250,40 +251,19 @@
       <param if="$(arg localization)" name="Mem/IncrementalMemory" type="string" value="false"/>
       <param unless="$(arg localization)" name="Mem/IncrementalMemory" type="string" value="true"/>
       <param name="Mem/InitWMWithAllNodes" type="string" value="$(arg localization)"/>
-
-      <!-- RTAB-Map 调参 来源：http://wiki.ros.org/rtabmap_ros/Tutorials/SetupOnYourRobot#Kinect_.2B-_Odometry_.2B-_2D_laser -->
-
-      <!-- Correct odometry using the input lidar topic using ICP. -->
-      <param name="RGBD/NeighborLinkRefining" type="string" value="true"/>
-      <!--  Find local loop closures based on the robot position in the map. It is useful when the robot, for example, is coming back in the opposite direction. With camera facing back, global loop closures cannot be found. So using the position and previously added laser scans to the map, we find the transform using ICP. -->
-      <param name="RGBD/ProximityBySpace" type="string" value="true"/>
-      <!-- The robot should move to update the map (if not 0). -->
+      <!-- RTAB-Map's parameters 来源：http://wiki.ros.org/rtabmap_ros/Tutorials/SetupOnYourRobot#Kinect_.2B-_Odometry_.2B-_2D_laser -->
+      <param name="RGBD/ProximityBySpace" type="string" value="false"/>
       <param name="RGBD/AngularUpdate" type="string" value="0.01"/>
-      <!-- The robot should move to update the map (if not 0). -->
       <param name="RGBD/LinearUpdate" type="string" value="0.01"/>
-      <!-- By setting to false (which is the default), on loop closures the graph will be optimized from the first pose in the map. The TF /map -> /odom will change when this happens. When set to true, the graph is optimized from the latest node added to the map instead of the first. By optimizing from the last, the last pose keeps its value and all the previous poses are corrected according to it (so /odom and /map will always match together). -->
-      <param name="RGBD/OptimizeFromGraphEnd" type="string" value="false"/>
-      <!-- If true, the occupancy grid is created from the cloud generated by the depth camera. If false, the occupancy grid is created from the laser scans. -->
-      <param name="Grid/FromDepth" type="string" value="false"/>
-      <!-- Force 3DoF registration: roll, pitch and z won't be estimated. Set it true for 2D Lidar. -->
-      <param name="Reg/Force3DoF" type="string" value="true"/>
-      <!-- We chose ICP to refine global loop closures found with ICP using the laser scans. 
-      Loop closure transformation refining with ICP: 0=Visual, 1=ICP, 2=Visual+ICP-->
-      <param name="Reg/Strategy" type="string" value="2"/>
-      <!-- ICP parameters -->
-      <!-- Scans are filtered down to voxel of 5 cm before doing ICP. -->
-      <param name="Icp/VoxelSize" type="string" value="0.05"/>
-      <!-- Maximum distance between points during registration by ICP. -->
-      <param name="Icp/MaxCorrespondenceDistance" type="string" value="0.1"/>
-
       <!-- prefer to set it to true for navigation (all is relative to the current position of the robot) -->
       <param name="RGBD/OptimizeFromGraphEnd" type="string" value="true"/>
-      
+      <param name="Reg/Force3DoF" type="string" value="true"/>
+      <param name="Vis/MinInliers" type="string" value="12"/>
     </node>
 
     <!-- rtabmapviz Visualisation RTAB-Map -->
     <node if="$(arg rtabmapviz)" pkg="rtabmap_ros" type="rtabmapviz" name="rtabmapviz" args="-d $(arg gui_cfg)" output="$(arg output)" launch-prefix="$(arg launch_prefix)">
-      <param name="subscribe_depth" type="bool" value="false"/>
+      <param name="subscribe_depth" type="bool" value="$(arg depth)"/>
       <param name="subscribe_rgbd" type="bool" value="$(arg subscribe_rgbd)"/>
       <param name="subscribe_scan" type="bool" value="$(arg subscribe_scan)"/>
       <remap from="scan" to="$(arg scan_topic)"/>
@@ -294,9 +274,9 @@
       <param name="queue_size" type="int" value="$(arg queue_size)"/>
       <param name="approx_sync" type="bool" value="$(arg approx_sync)"/>
 
-      <!-- <remap from="rgb/image" to="$(arg rgb_topic_relay)"/>
+      <remap from="rgb/image" to="$(arg rgb_topic_relay)"/>
       <remap from="depth/image" to="$(arg depth_topic_relay)"/>
-      <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/> -->
+      <remap from="rgb/camera_info" to="$(arg camera_info_topic)"/>
 
       <remap from="rgbd_image" to="$(arg rgbd_topic_relay)"/>
 
@@ -308,9 +288,9 @@
   <!-- Visualization RVIZ -->
   <node if="$(arg rviz)" pkg="rviz" type="rviz" name="rviz" args="-d $(arg rviz_cfg)"/>
   <node if="$(arg rviz)" pkg="nodelet" type="nodelet" name="points_xyzrgb" args="standalone rtabmap_ros/point_cloud_xyzrgb" output="$(arg output)">
-    <!-- <remap unless="$(arg subscribe_rgbd)" from="rgb/image" to="$(arg rgb_topic_relay)"/>
+    <remap unless="$(arg subscribe_rgbd)" from="rgb/image" to="$(arg rgb_topic_relay)"/>
     <remap unless="$(arg subscribe_rgbd)" from="depth/image" to="$(arg depth_topic_relay)"/>
-    <remap unless="$(arg subscribe_rgbd)" from="rgb/camera_info" to="$(arg camera_info_topic)"/> -->
+    <remap unless="$(arg subscribe_rgbd)" from="rgb/camera_info" to="$(arg camera_info_topic)"/>
     <remap from="rgbd_image" to="$(arg rgbd_topic_relay)"/>
     <remap from="cloud" to="voxel_cloud" />
 

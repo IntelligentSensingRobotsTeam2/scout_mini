@@ -1,0 +1,574 @@
+[33m[ WARN] [1622679562.240508096]: Setting "Grid/FromDepth" parameter to false (default true) as "subscribe_scan" or "subscribe_scan_cloud" is true. The occupancy grid map will be constructed from laser scans. To get occupancy grid map from cloud projection, set "Grid/FromDepth" to true. To suppress this warning, add <param name="Grid/FromDepth" type="string" value="false"/>[0m
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+[33m[ WARN] [1622679563.079093224]: Parameter BRIEF/Bytes not found[0m
+[33m[ WARN] [1622679563.081828156]: Parameter BRISK/Octaves not found[0m
+[33m[ WARN] [1622679563.083796128]: Parameter BRISK/PatternScale not found[0m
+[33m[ WARN] [1622679563.084572753]: Parameter BRISK/Thresh not found[0m
+[33m[ WARN] [1622679563.084941135]: Parameter Bayes/FullPredictionUpdate not found[0m
+[33m[ WARN] [1622679563.085265265]: Parameter Bayes/PredictionLC not found[0m
+[33m[ WARN] [1622679563.085634926]: Parameter Bayes/VirtualPlacePriorThr not found[0m
+[33m[ WARN] [1622679563.085989831]: Parameter Db/TargetVersion not found[0m
+[33m[ WARN] [1622679563.088221751]: Parameter DbSqlite3/CacheSize not found[0m
+[33m[ WARN] [1622679563.090446288]: Parameter DbSqlite3/InMemory not found[0m
+[33m[ WARN] [1622679563.091893683]: Parameter DbSqlite3/JournalMode not found[0m
+[33m[ WARN] [1622679563.093913390]: Parameter DbSqlite3/Synchronous not found[0m
+[33m[ WARN] [1622679563.096830083]: Parameter DbSqlite3/TempStore not found[0m
+[33m[ WARN] [1622679563.097480265]: Parameter FAST/CV not found[0m
+[33m[ WARN] [1622679563.099216084]: Parameter FAST/Gpu not found[0m
+[33m[ WARN] [1622679563.099629853]: Parameter FAST/GpuKeypointsRatio not found[0m
+[33m[ WARN] [1622679563.099931815]: Parameter FAST/GridCols not found[0m
+[33m[ WARN] [1622679563.100234485]: Parameter FAST/GridRows not found[0m
+[33m[ WARN] [1622679563.100550484]: Parameter FAST/MaxThreshold not found[0m
+[33m[ WARN] [1622679563.101552126]: Parameter FAST/MinThreshold not found[0m
+[33m[ WARN] [1622679563.102223417]: Parameter FAST/NonmaxSuppression not found[0m
+[33m[ WARN] [1622679563.102620709]: Parameter FAST/Threshold not found[0m
+[33m[ WARN] [1622679563.102946422]: Parameter FREAK/NOctaves not found[0m
+[33m[ WARN] [1622679563.103333059]: Parameter FREAK/OrientationNormalized not found[0m
+[33m[ WARN] [1622679563.103984939]: Parameter FREAK/PatternScale not found[0m
+[33m[ WARN] [1622679563.104454910]: Parameter FREAK/ScaleNormalized not found[0m
+[33m[ WARN] [1622679563.105020105]: Parameter GFTT/BlockSize not found[0m
+[33m[ WARN] [1622679563.105596707]: Parameter GFTT/K not found[0m
+[33m[ WARN] [1622679563.106324535]: Parameter GFTT/MinDistance not found[0m
+[33m[ WARN] [1622679563.106753395]: Parameter GFTT/QualityLevel not found[0m
+[33m[ WARN] [1622679563.107206191]: Parameter GFTT/UseHarrisDetector not found[0m
+[33m[ WARN] [1622679563.107583536]: Parameter GMS/ThresholdFactor not found[0m
+[33m[ WARN] [1622679563.108033270]: Parameter GMS/WithRotation not found[0m
+[33m[ WARN] [1622679563.109050839]: Parameter GMS/WithScale not found[0m
+[33m[ WARN] [1622679563.109590872]: Parameter GTSAM/Optimizer not found[0m
+[33m[ WARN] [1622679563.110326718]: Parameter Grid/3D not found[0m
+[33m[ WARN] [1622679563.110959581]: Parameter Grid/CellSize not found[0m
+[33m[ WARN] [1622679563.111337093]: Parameter Grid/ClusterRadius not found[0m
+[33m[ WARN] [1622679563.111716821]: Parameter Grid/DepthDecimation not found[0m
+[33m[ WARN] [1622679563.112066177]: Parameter Grid/DepthRoiRatios not found[0m
+[33m[ WARN] [1622679563.112421887]: Parameter Grid/FlatObstacleDetected not found[0m
+[33m[ WARN] [1622679563.112731476]: Parameter Grid/FootprintHeight not found[0m
+[33m[ WARN] [1622679563.113083568]: Parameter Grid/FootprintLength not found[0m
+[33m[ WARN] [1622679563.113397220]: Parameter Grid/FootprintWidth not found[0m
+[33m[ WARN] [1622679563.113695700]: Parameter Grid/FromDepth not found[0m
+[33m[ WARN] [1622679563.113979390]: Parameter Grid/GroundIsObstacle not found[0m
+[33m[ WARN] [1622679563.114547339]: Parameter Grid/MapFrameProjection not found[0m
+[33m[ WARN] [1622679563.116226925]: Parameter Grid/MaxGroundAngle not found[0m
+[33m[ WARN] [1622679563.116887939]: Parameter Grid/MaxGroundHeight not found[0m
+[33m[ WARN] [1622679563.117469410]: Parameter Grid/MaxObstacleHeight not found[0m
+[33m[ WARN] [1622679563.118223931]: Parameter Grid/MinClusterSize not found[0m
+[33m[ WARN] [1622679563.119029507]: Parameter Grid/MinGroundHeight not found[0m
+[33m[ WARN] [1622679563.120989382]: Parameter Grid/NoiseFilteringMinNeighbors not found[0m
+[33m[ WARN] [1622679563.121719172]: Parameter Grid/NoiseFilteringRadius not found[0m
+[33m[ WARN] [1622679563.122293590]: Parameter Grid/NormalK not found[0m
+[33m[ WARN] [1622679563.122823545]: Parameter Grid/NormalsSegmentation not found[0m
+[33m[ WARN] [1622679563.123254394]: Parameter Grid/PreVoxelFiltering not found[0m
+[33m[ WARN] [1622679563.123638840]: Parameter Grid/RangeMax not found[0m
+[33m[ WARN] [1622679563.124010764]: Parameter Grid/RangeMin not found[0m
+[33m[ WARN] [1622679563.124380868]: Parameter Grid/RayTracing not found[0m
+[33m[ WARN] [1622679563.124748570]: Parameter Grid/Scan2dUnknownSpaceFilled not found[0m
+[33m[ WARN] [1622679563.125136909]: Parameter Grid/ScanDecimation not found[0m
+[33m[ WARN] [1622679563.125512911]: Parameter GridGlobal/Eroded not found[0m
+[33m[ WARN] [1622679563.125916131]: Parameter GridGlobal/FootprintRadius not found[0m
+[33m[ WARN] [1622679563.126372809]: Parameter GridGlobal/FullUpdate not found[0m
+[33m[ WARN] [1622679563.126841973]: Parameter GridGlobal/MaxNodes not found[0m
+[33m[ WARN] [1622679563.127312547]: Parameter GridGlobal/MinSize not found[0m
+[33m[ WARN] [1622679563.127798939]: Parameter GridGlobal/OccupancyThr not found[0m
+[33m[ WARN] [1622679563.128492874]: Parameter GridGlobal/ProbClampingMax not found[0m
+[33m[ WARN] [1622679563.128985713]: Parameter GridGlobal/ProbClampingMin not found[0m
+[33m[ WARN] [1622679563.130437424]: Parameter GridGlobal/ProbHit not found[0m
+[33m[ WARN] [1622679563.134594906]: Parameter GridGlobal/ProbMiss not found[0m
+[33m[ WARN] [1622679563.136424214]: Parameter GridGlobal/UpdateError not found[0m
+[33m[ WARN] [1622679563.138627125]: Parameter Icp/CorrespondenceRatio not found[0m
+[33m[ WARN] [1622679563.139207025]: Parameter Icp/DownsamplingStep not found[0m
+[33m[ WARN] [1622679563.139662192]: Parameter Icp/Epsilon not found[0m
+[33m[ WARN] [1622679563.140057773]: Parameter Icp/Iterations not found[0m
+[33m[ WARN] [1622679563.140435320]: Parameter Icp/MaxCorrespondenceDistance not found[0m
+[33m[ WARN] [1622679563.140839292]: Parameter Icp/MaxRotation not found[0m
+[33m[ WARN] [1622679563.141162052]: Parameter Icp/MaxTranslation not found[0m
+[33m[ WARN] [1622679563.141498379]: Parameter Icp/PM not found[0m
+[33m[ WARN] [1622679563.141875030]: Parameter Icp/PMConfig not found[0m
+[33m[ WARN] [1622679563.142314529]: Parameter Icp/PMMatcherEpsilon not found[0m
+[33m[ WARN] [1622679563.142695325]: Parameter Icp/PMMatcherIntensity not found[0m
+[33m[ WARN] [1622679563.143135239]: Parameter Icp/PMMatcherKnn not found[0m
+[33m[ WARN] [1622679563.143493543]: Parameter Icp/PMOutlierRatio not found[0m
+[33m[ WARN] [1622679563.143873672]: Parameter Icp/PointToPlane not found[0m
+[33m[ WARN] [1622679563.144248802]: Parameter Icp/PointToPlaneGroundNormalsUp not found[0m
+[33m[ WARN] [1622679563.144652495]: Parameter Icp/PointToPlaneK not found[0m
+[33m[ WARN] [1622679563.145049296]: Parameter Icp/PointToPlaneLowComplexityStrategy not found[0m
+[33m[ WARN] [1622679563.145695775]: Parameter Icp/PointToPlaneMinComplexity not found[0m
+[33m[ WARN] [1622679563.147778122]: Parameter Icp/PointToPlaneRadius not found[0m
+[33m[ WARN] [1622679563.148421649]: Parameter Icp/RangeMax not found[0m
+[33m[ WARN] [1622679563.148957606]: Parameter Icp/RangeMin not found[0m
+[33m[ WARN] [1622679563.149420455]: Parameter Icp/VoxelSize not found[0m
+[33m[ WARN] [1622679563.149929519]: Parameter ImuFilter/ComplementaryBiasAlpha not found[0m
+[33m[ WARN] [1622679563.150494979]: Parameter ImuFilter/ComplementaryDoAdpativeGain not found[0m
+[33m[ WARN] [1622679563.151109238]: Parameter ImuFilter/ComplementaryDoBiasEstimation not found[0m
+[33m[ WARN] [1622679563.151555603]: Parameter ImuFilter/ComplementaryGainAcc not found[0m
+[33m[ WARN] [1622679563.151949372]: Parameter ImuFilter/MadgwickGain not found[0m
+[33m[ WARN] [1622679563.152354127]: Parameter ImuFilter/MadgwickZeta not found[0m
+[33m[ WARN] [1622679563.152830923]: Parameter KAZE/Diffusivity not found[0m
+[33m[ WARN] [1622679563.153488370]: Parameter KAZE/Extended not found[0m
+[33m[ WARN] [1622679563.153941872]: Parameter KAZE/NOctaveLayers not found[0m
+[33m[ WARN] [1622679563.154392874]: Parameter KAZE/NOctaves not found[0m
+[33m[ WARN] [1622679563.154999252]: Parameter KAZE/Threshold not found[0m
+[33m[ WARN] [1622679563.155462488]: Parameter KAZE/Upright not found[0m
+[33m[ WARN] [1622679563.155887503]: Parameter Kp/BadSignRatio not found[0m
+[33m[ WARN] [1622679563.156335039]: Parameter Kp/ByteToFloat not found[0m
+[33m[ WARN] [1622679563.156735788]: Parameter Kp/DetectorStrategy not found[0m
+[33m[ WARN] [1622679563.157140228]: Parameter Kp/DictionaryPath not found[0m
+[33m[ WARN] [1622679563.157529069]: Parameter Kp/FlannRebalancingFactor not found[0m
+[33m[ WARN] [1622679563.157908180]: Parameter Kp/GridCols not found[0m
+[33m[ WARN] [1622679563.158326391]: Parameter Kp/GridRows not found[0m
+[33m[ WARN] [1622679563.158719873]: Parameter Kp/IncrementalDictionary not found[0m
+[33m[ WARN] [1622679563.159132582]: Parameter Kp/IncrementalFlann not found[0m
+[33m[ WARN] [1622679563.159551395]: Parameter Kp/MaxDepth not found[0m
+[33m[ WARN] [1622679563.159941986]: Parameter Kp/MaxFeatures not found[0m
+[33m[ WARN] [1622679563.160328222]: Parameter Kp/MinDepth not found[0m
+[33m[ WARN] [1622679563.160709815]: Parameter Kp/NNStrategy not found[0m
+[33m[ WARN] [1622679563.161222284]: Parameter Kp/NewWordsComparedTogether not found[0m
+[33m[ WARN] [1622679563.162144765]: Parameter Kp/NndrRatio not found[0m
+[33m[ WARN] [1622679563.162620878]: Parameter Kp/Parallelized not found[0m
+[33m[ WARN] [1622679563.163026265]: Parameter Kp/RoiRatios not found[0m
+[33m[ WARN] [1622679563.163381962]: Parameter Kp/SubPixEps not found[0m
+[33m[ WARN] [1622679563.163953015]: Parameter Kp/SubPixIterations not found[0m
+[33m[ WARN] [1622679563.164996649]: Parameter Kp/SubPixWinSize not found[0m
+[33m[ WARN] [1622679563.165541413]: Parameter Kp/TfIdfLikelihoodUsed not found[0m
+[33m[ WARN] [1622679563.166053157]: Parameter Marker/CornerRefinementMethod not found[0m
+[33m[ WARN] [1622679563.166582749]: Parameter Marker/Dictionary not found[0m
+[33m[ WARN] [1622679563.167088681]: Parameter Marker/Length not found[0m
+[33m[ WARN] [1622679563.167523984]: Parameter Marker/MaxDepthError not found[0m
+[33m[ WARN] [1622679563.170087936]: Parameter Marker/MaxRange not found[0m
+[33m[ WARN] [1622679563.170622335]: Parameter Marker/MinRange not found[0m
+[33m[ WARN] [1622679563.171146390]: Parameter Marker/VarianceAngular not found[0m
+[33m[ WARN] [1622679563.171574317]: Parameter Marker/VarianceLinear not found[0m
+[33m[ WARN] [1622679563.171978152]: Parameter Mem/BadSignaturesIgnored not found[0m
+[33m[ WARN] [1622679563.173186589]: Parameter Mem/BinDataKept not found[0m
+[33m[ WARN] [1622679563.173675209]: Parameter Mem/CompressionParallelized not found[0m
+[33m[ WARN] [1622679563.174092944]: Parameter Mem/CovOffDiagIgnored not found[0m
+[33m[ WARN] [1622679563.174719770]: Parameter Mem/DepthAsMask not found[0m
+[33m[ WARN] [1622679563.175155658]: Parameter Mem/GenerateIds not found[0m
+[33m[ WARN] [1622679563.175532348]: Parameter Mem/ImageCompressionFormat not found[0m
+[33m[ WARN] [1622679563.175924866]: Parameter Mem/ImageKept not found[0m
+[33m[ WARN] [1622679563.176319286]: Parameter Mem/ImagePostDecimation not found[0m
+[33m[ WARN] [1622679563.176752444]: Parameter Mem/ImagePreDecimation not found[0m
+[33m[ WARN] [1622679563.177148180]: Parameter Mem/IncrementalMemory not found[0m
+[33m[ WARN] [1622679563.179442508]: Parameter Mem/InitWMWithAllNodes not found[0m
+[33m[ WARN] [1622679563.186704053]: Parameter Mem/IntermediateNodeDataKept not found[0m
+[33m[ WARN] [1622679563.187069515]: Parameter Mem/LaserScanDownsampleStepSize not found[0m
+[33m[ WARN] [1622679563.187388337]: Parameter Mem/LaserScanNormalK not found[0m
+[33m[ WARN] [1622679563.187703825]: Parameter Mem/LaserScanNormalRadius not found[0m
+[33m[ WARN] [1622679563.188088252]: Parameter Mem/LaserScanVoxelSize not found[0m
+[33m[ WARN] [1622679563.188401796]: Parameter Mem/LocalizationDataSaved not found[0m
+[33m[ WARN] [1622679563.188712948]: Parameter Mem/MapLabelsAdded not found[0m
+[33m[ WARN] [1622679563.189024088]: Parameter Mem/NotLinkedNodesKept not found[0m
+[33m[ WARN] [1622679563.189331896]: Parameter Mem/RawDescriptorsKept not found[0m
+[33m[ WARN] [1622679563.189785026]: Parameter Mem/RecentWmRatio not found[0m
+[33m[ WARN] [1622679563.190165508]: Parameter Mem/ReduceGraph not found[0m
+[33m[ WARN] [1622679563.190556912]: Parameter Mem/RehearsalIdUpdatedToNewOne not found[0m
+[33m[ WARN] [1622679563.190920848]: Parameter Mem/RehearsalSimilarity not found[0m
+[33m[ WARN] [1622679563.191275439]: Parameter Mem/RehearsalWeightIgnoredWhileMoving not found[0m
+[33m[ WARN] [1622679563.191634278]: Parameter Mem/STMSize not found[0m
+[33m[ WARN] [1622679563.191991717]: Parameter Mem/SaveDepth16Format not found[0m
+[33m[ WARN] [1622679563.192341529]: Parameter Mem/StereoFromMotion not found[0m
+[33m[ WARN] [1622679563.192692303]: Parameter Mem/TransferSortingByWeightId not found[0m
+[33m[ WARN] [1622679563.193048182]: Parameter Mem/UseOdomFeatures not found[0m
+[33m[ WARN] [1622679563.193404906]: Parameter Mem/UseOdomGravity not found[0m
+[33m[ WARN] [1622679563.193754180]: Parameter ORB/EdgeThreshold not found[0m
+[33m[ WARN] [1622679563.194109028]: Parameter ORB/FirstLevel not found[0m
+[33m[ WARN] [1622679563.194511156]: Parameter ORB/Gpu not found[0m
+[33m[ WARN] [1622679563.194868688]: Parameter ORB/NLevels not found[0m
+[33m[ WARN] [1622679563.195211824]: Parameter ORB/PatchSize not found[0m
+[33m[ WARN] [1622679563.195638641]: Parameter ORB/ScaleFactor not found[0m
+[33m[ WARN] [1622679563.196185172]: Parameter ORB/ScoreType not found[0m
+[33m[ WARN] [1622679563.196551064]: Parameter ORB/WTA_K not found[0m
+[33m[ WARN] [1622679563.196922237]: Parameter Optimizer/Epsilon not found[0m
+[33m[ WARN] [1622679563.197314030]: Parameter Optimizer/GravitySigma not found[0m
+[33m[ WARN] [1622679563.197683550]: Parameter Optimizer/Iterations not found[0m
+[33m[ WARN] [1622679563.198042927]: Parameter Optimizer/LandmarksIgnored not found[0m
+[33m[ WARN] [1622679563.198411613]: Parameter Optimizer/PriorsIgnored not found[0m
+[33m[ WARN] [1622679563.198766706]: Parameter Optimizer/Robust not found[0m
+[33m[ WARN] [1622679563.199117930]: Parameter Optimizer/Strategy not found[0m
+[33m[ WARN] [1622679563.199469851]: Parameter Optimizer/VarianceIgnored not found[0m
+[33m[ WARN] [1622679563.199824066]: Parameter PyMatcher/Cuda not found[0m
+[33m[ WARN] [1622679563.200180865]: Parameter PyMatcher/Iterations not found[0m
+[33m[ WARN] [1622679563.200526261]: Parameter PyMatcher/Model not found[0m
+[33m[ WARN] [1622679563.200880020]: Parameter PyMatcher/Path not found[0m
+[33m[ WARN] [1622679563.201232551]: Parameter PyMatcher/Threshold not found[0m
+[33m[ WARN] [1622679563.201575299]: Parameter RGBD/AngularSpeedUpdate not found[0m
+[33m[ WARN] [1622679563.201923111]: Parameter RGBD/AngularUpdate not found[0m
+[33m[ WARN] [1622679563.202380775]: Parameter RGBD/CreateOccupancyGrid not found[0m
+[33m[ WARN] [1622679563.202946782]: Parameter RGBD/Enabled not found[0m
+[33m[ WARN] [1622679563.203372469]: Parameter RGBD/GoalReachedRadius not found[0m
+[33m[ WARN] [1622679563.203700605]: Parameter RGBD/GoalsSavedInUserData not found[0m
+[33m[ WARN] [1622679563.204067863]: Parameter RGBD/LinearSpeedUpdate not found[0m
+[33m[ WARN] [1622679563.204421605]: Parameter RGBD/LinearUpdate not found[0m
+[33m[ WARN] [1622679563.204775102]: Parameter RGBD/LocalBundleOnLoopClosure not found[0m
+[33m[ WARN] [1622679563.205145640]: Parameter RGBD/LocalImmunizationRatio not found[0m
+[33m[ WARN] [1622679563.205513167]: Parameter RGBD/LocalRadius not found[0m
+[33m[ WARN] [1622679563.205828455]: Parameter RGBD/LoopClosureReextractFeatures not found[0m
+[33m[ WARN] [1622679563.206132139]: Parameter RGBD/LoopCovLimited not found[0m
+[33m[ WARN] [1622679563.206574280]: Parameter RGBD/MarkerDetection not found[0m
+[33m[ WARN] [1622679563.206885952]: Parameter RGBD/MaxLocalRetrieved not found[0m
+[33m[ WARN] [1622679563.207192264]: Parameter RGBD/MaxLoopClosureDistance not found[0m
+[33m[ WARN] [1622679563.207494067]: Parameter RGBD/MaxOdomCacheSize not found[0m
+[33m[ WARN] [1622679563.207793075]: Parameter RGBD/NeighborLinkRefining not found[0m
+[33m[ WARN] [1622679563.208095971]: Parameter RGBD/NewMapOdomChangeDistance not found[0m
+[33m[ WARN] [1622679563.208407657]: Parameter RGBD/OptimizeFromGraphEnd not found[0m
+[33m[ WARN] [1622679563.208779049]: Parameter RGBD/OptimizeMaxError not found[0m
+[33m[ WARN] [1622679563.209087364]: Parameter RGBD/PlanAngularVelocity not found[0m
+[33m[ WARN] [1622679563.209391921]: Parameter RGBD/PlanLinearVelocity not found[0m
+[33m[ WARN] [1622679563.209693806]: Parameter RGBD/PlanStuckIterations not found[0m
+[33m[ WARN] [1622679563.209997315]: Parameter RGBD/ProximityAngle not found[0m
+[33m[ WARN] [1622679563.210369670]: Parameter RGBD/ProximityBySpace not found[0m
+[33m[ WARN] [1622679563.210738162]: Parameter RGBD/ProximityByTime not found[0m
+[33m[ WARN] [1622679563.211792356]: Parameter RGBD/ProximityMaxGraphDepth not found[0m
+[33m[ WARN] [1622679563.212284806]: Parameter RGBD/ProximityMaxPaths not found[0m
+[33m[ WARN] [1622679563.212732414]: Parameter RGBD/ProximityOdomGuess not found[0m
+[33m[ WARN] [1622679563.213123797]: Parameter RGBD/ProximityPathFilteringRadius not found[0m
+[33m[ WARN] [1622679563.213442020]: Parameter RGBD/ProximityPathMaxNeighbors not found[0m
+[33m[ WARN] [1622679563.213751365]: Parameter RGBD/ProximityPathRawPosesUsed not found[0m
+[33m[ WARN] [1622679563.214056328]: Parameter RGBD/SavedLocalizationIgnored not found[0m
+[33m[ WARN] [1622679563.214383374]: Parameter RGBD/ScanMatchingIdsSavedInLinks not found[0m
+[33m[ WARN] [1622679563.214755951]: Parameter Reg/Force3DoF not found[0m
+[33m[ WARN] [1622679563.215178094]: Parameter Reg/RepeatOnce not found[0m
+[33m[ WARN] [1622679563.215549863]: Parameter Reg/Strategy not found[0m
+[33m[ WARN] [1622679563.216034296]: Parameter Rtabmap/ComputeRMSE not found[0m
+[33m[ WARN] [1622679563.216976261]: Parameter Rtabmap/CreateIntermediateNodes not found[0m
+[33m[ WARN] [1622679563.217430140]: Parameter Rtabmap/DetectionRate not found[0m
+[33m[ WARN] [1622679563.217826144]: Parameter Rtabmap/ImageBufferSize not found[0m
+[33m[ WARN] [1622679563.218212496]: Parameter Rtabmap/ImagesAlreadyRectified not found[0m
+[33m[ WARN] [1622679563.218628060]: Parameter Rtabmap/LoopGPS not found[0m
+[33m[ WARN] [1622679563.219008192]: Parameter Rtabmap/LoopRatio not found[0m
+[33m[ WARN] [1622679563.219384253]: Parameter Rtabmap/LoopThr not found[0m
+[33m[ WARN] [1622679563.219707020]: Parameter Rtabmap/MaxRetrieved not found[0m
+[33m[ WARN] [1622679563.220011642]: Parameter Rtabmap/MemoryThr not found[0m
+[33m[ WARN] [1622679563.220316903]: Parameter Rtabmap/PublishLastSignature not found[0m
+[33m[ WARN] [1622679563.220623513]: Parameter Rtabmap/PublishLikelihood not found[0m
+[33m[ WARN] [1622679563.221013983]: Parameter Rtabmap/PublishPdf not found[0m
+[33m[ WARN] [1622679563.221398054]: Parameter Rtabmap/PublishRAMUsage not found[0m
+[33m[ WARN] [1622679563.221778049]: Parameter Rtabmap/PublishStats not found[0m
+[33m[ WARN] [1622679563.222144011]: Parameter Rtabmap/RectifyOnlyFeatures not found[0m
+[33m[ WARN] [1622679563.222530560]: Parameter Rtabmap/SaveWMState not found[0m
+[33m[ WARN] [1622679563.222916706]: Parameter Rtabmap/StartNewMapOnGoodSignature not found[0m
+[33m[ WARN] [1622679563.223296684]: Parameter Rtabmap/StartNewMapOnLoopClosure not found[0m
+[33m[ WARN] [1622679563.223670296]: Parameter Rtabmap/StatisticLogged not found[0m
+[33m[ WARN] [1622679563.224030451]: Parameter Rtabmap/StatisticLoggedHeaders not found[0m
+[33m[ WARN] [1622679563.224396535]: Parameter Rtabmap/StatisticLogsBufferedInRAM not found[0m
+[33m[ WARN] [1622679563.224774636]: Parameter Rtabmap/TimeThr not found[0m
+[33m[ WARN] [1622679563.225789537]: Parameter SIFT/ContrastThreshold not found[0m
+[33m[ WARN] [1622679563.226104687]: Parameter SIFT/EdgeThreshold not found[0m
+[33m[ WARN] [1622679563.226417039]: Parameter SIFT/NFeatures not found[0m
+[33m[ WARN] [1622679563.226720844]: Parameter SIFT/NOctaveLayers not found[0m
+[33m[ WARN] [1622679563.227025326]: Parameter SIFT/RootSIFT not found[0m
+[33m[ WARN] [1622679563.227334881]: Parameter SIFT/Sigma not found[0m
+[33m[ WARN] [1622679563.227648026]: Parameter SURF/Extended not found[0m
+[33m[ WARN] [1622679563.228003751]: Parameter SURF/GpuKeypointsRatio not found[0m
+[33m[ WARN] [1622679563.228348057]: Parameter SURF/GpuVersion not found[0m
+[33m[ WARN] [1622679563.228698964]: Parameter SURF/HessianThreshold not found[0m
+[33m[ WARN] [1622679563.229080434]: Parameter SURF/OctaveLayers not found[0m
+[33m[ WARN] [1622679563.229487751]: Parameter SURF/Octaves not found[0m
+[33m[ WARN] [1622679563.229797318]: Parameter SURF/Upright not found[0m
+[33m[ WARN] [1622679563.230102226]: Parameter Stereo/DenseStrategy not found[0m
+[33m[ WARN] [1622679563.230414985]: Parameter Stereo/Eps not found[0m
+[33m[ WARN] [1622679563.230721713]: Parameter Stereo/Iterations not found[0m
+[33m[ WARN] [1622679563.231023348]: Parameter Stereo/MaxDisparity not found[0m
+[33m[ WARN] [1622679563.231325266]: Parameter Stereo/MaxLevel not found[0m
+[33m[ WARN] [1622679563.231630258]: Parameter Stereo/MinDisparity not found[0m
+[33m[ WARN] [1622679563.231933454]: Parameter Stereo/OpticalFlow not found[0m
+[33m[ WARN] [1622679563.232233783]: Parameter Stereo/SSD not found[0m
+[33m[ WARN] [1622679563.232541901]: Parameter Stereo/WinHeight not found[0m
+[33m[ WARN] [1622679563.232937867]: Parameter Stereo/WinWidth not found[0m
+[33m[ WARN] [1622679563.233323565]: Parameter StereoBM/BlockSize not found[0m
+[33m[ WARN] [1622679563.233738935]: Parameter StereoBM/Disp12MaxDiff not found[0m
+[33m[ WARN] [1622679563.234084062]: Parameter StereoBM/MinDisparity not found[0m
+[33m[ WARN] [1622679563.234434182]: Parameter StereoBM/NumDisparities not found[0m
+[33m[ WARN] [1622679563.234759079]: Parameter StereoBM/PreFilterCap not found[0m
+[33m[ WARN] [1622679563.235073131]: Parameter StereoBM/PreFilterSize not found[0m
+[33m[ WARN] [1622679563.235391728]: Parameter StereoBM/SpeckleRange not found[0m
+[33m[ WARN] [1622679563.235699396]: Parameter StereoBM/SpeckleWindowSize not found[0m
+[33m[ WARN] [1622679563.236045585]: Parameter StereoBM/TextureThreshold not found[0m
+[33m[ WARN] [1622679563.236364925]: Parameter StereoBM/UniquenessRatio not found[0m
+[33m[ WARN] [1622679563.236677447]: Parameter StereoSGBM/BlockSize not found[0m
+[33m[ WARN] [1622679563.236985634]: Parameter StereoSGBM/Disp12MaxDiff not found[0m
+[33m[ WARN] [1622679563.237290426]: Parameter StereoSGBM/MinDisparity not found[0m
+[33m[ WARN] [1622679563.237596448]: Parameter StereoSGBM/Mode not found[0m
+[33m[ WARN] [1622679563.238047643]: Parameter StereoSGBM/NumDisparities not found[0m
+[33m[ WARN] [1622679563.238387433]: Parameter StereoSGBM/P1 not found[0m
+[33m[ WARN] [1622679563.238709256]: Parameter StereoSGBM/P2 not found[0m
+[33m[ WARN] [1622679563.239038840]: Parameter StereoSGBM/PreFilterCap not found[0m
+[33m[ WARN] [1622679563.239419565]: Parameter StereoSGBM/SpeckleRange not found[0m
+[33m[ WARN] [1622679563.239781242]: Parameter StereoSGBM/SpeckleWindowSize not found[0m
+[33m[ WARN] [1622679563.240123927]: Parameter StereoSGBM/UniquenessRatio not found[0m
+[33m[ WARN] [1622679563.240450933]: Parameter SuperPoint/Cuda not found[0m
+[33m[ WARN] [1622679563.240778204]: Parameter SuperPoint/ModelPath not found[0m
+[33m[ WARN] [1622679563.241140952]: Parameter SuperPoint/NMS not found[0m
+[33m[ WARN] [1622679563.241546543]: Parameter SuperPoint/NMSRadius not found[0m
+[33m[ WARN] [1622679563.242026777]: Parameter SuperPoint/Threshold not found[0m
+[33m[ WARN] [1622679563.242378824]: Parameter VhEp/Enabled not found[0m
+[33m[ WARN] [1622679563.242707431]: Parameter VhEp/MatchCountMin not found[0m
+[33m[ WARN] [1622679563.243037612]: Parameter VhEp/RansacParam1 not found[0m
+[33m[ WARN] [1622679563.243363368]: Parameter VhEp/RansacParam2 not found[0m
+[33m[ WARN] [1622679563.243698179]: Parameter Vis/BundleAdjustment not found[0m
+[33m[ WARN] [1622679563.244081377]: Parameter Vis/CorFlowEps not found[0m
+[33m[ WARN] [1622679563.245924596]: Parameter Vis/CorFlowIterations not found[0m
+[33m[ WARN] [1622679563.246496629]: Parameter Vis/CorFlowMaxLevel not found[0m
+[33m[ WARN] [1622679563.246864915]: Parameter Vis/CorFlowWinSize not found[0m
+[33m[ WARN] [1622679563.247210287]: Parameter Vis/CorGuessMatchToProjection not found[0m
+[33m[ WARN] [1622679563.247583624]: Parameter Vis/CorGuessWinSize not found[0m
+[33m[ WARN] [1622679563.247924668]: Parameter Vis/CorNNDR not found[0m
+[33m[ WARN] [1622679563.248265882]: Parameter Vis/CorNNType not found[0m
+[33m[ WARN] [1622679563.250458227]: Parameter Vis/CorType not found[0m
+[33m[ WARN] [1622679563.251049108]: Parameter Vis/DepthAsMask not found[0m
+[33m[ WARN] [1622679563.251472426]: Parameter Vis/EpipolarGeometryVar not found[0m
+[33m[ WARN] [1622679563.251812391]: Parameter Vis/EstimationType not found[0m
+[33m[ WARN] [1622679563.252290186]: Parameter Vis/FeatureType not found[0m
+[33m[ WARN] [1622679563.252666354]: Parameter Vis/ForwardEstOnly not found[0m
+[33m[ WARN] [1622679563.253014611]: Parameter Vis/GridCols not found[0m
+[33m[ WARN] [1622679563.253356573]: Parameter Vis/GridRows not found[0m
+[33m[ WARN] [1622679563.253715153]: Parameter Vis/InlierDistance not found[0m
+[33m[ WARN] [1622679563.254092057]: Parameter Vis/Iterations not found[0m
+[33m[ WARN] [1622679563.254564455]: Parameter Vis/MaxDepth not found[0m
+[33m[ WARN] [1622679563.254911063]: Parameter Vis/MaxFeatures not found[0m
+[33m[ WARN] [1622679563.255266228]: Parameter Vis/MeanInliersDistance not found[0m
+[33m[ WARN] [1622679563.255598880]: Parameter Vis/MinDepth not found[0m
+[33m[ WARN] [1622679563.255943824]: Parameter Vis/MinInliers not found[0m
+[33m[ WARN] [1622679563.256345185]: Parameter Vis/MinInliersDistribution not found[0m
+[33m[ WARN] [1622679563.256692102]: Parameter Vis/PnPFlags not found[0m
+[33m[ WARN] [1622679563.257025540]: Parameter Vis/PnPRefineIterations not found[0m
+[33m[ WARN] [1622679563.257355356]: Parameter Vis/PnPReprojError not found[0m
+[33m[ WARN] [1622679563.257698400]: Parameter Vis/RefineIterations not found[0m
+[33m[ WARN] [1622679563.258084126]: Parameter Vis/RoiRatios not found[0m
+[33m[ WARN] [1622679563.258441245]: Parameter Vis/SubPixEps not found[0m
+[33m[ WARN] [1622679563.258870284]: Parameter Vis/SubPixIterations not found[0m
+[33m[ WARN] [1622679563.259223489]: Parameter Vis/SubPixWinSize not found[0m
+[33m[ WARN] [1622679563.259561925]: Parameter g2o/Baseline not found[0m
+[33m[ WARN] [1622679563.259895210]: Parameter g2o/Optimizer not found[0m
+[33m[ WARN] [1622679563.260231219]: Parameter g2o/PixelVariance not found[0m
+[33m[ WARN] [1622679563.260595121]: Parameter g2o/RobustKernelDelta not found[0m
+[33m[ WARN] [1622679563.260969843]: Parameter g2o/Solver not found[0m
+[33m[ WARN] [1622679563.553034569]: rtabmap: Parameters subscribe_depth and subscribe_rgbd cannot be true at the same time. Parameter subscribe_depth is set to false.[0m
+[33m[ WARN] [1622679566.479252983]: /rtabmap/rgbd_sync: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/rgbd_sync subscribed to (approx sync):
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info[0m
+[33m[ WARN] [1622679568.582094151]: /rtabmap/rtabmapviz: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). If topics are not published at the same rate, you could increase "queue_size" parameter (current=200).
+/rtabmap/rtabmapviz subscribed to (approx sync):
+   /odom \
+   /rtabmap/rgbd_image \
+   /scan[0m
+[33m[ WARN] [1622679571.479420937]: /rtabmap/rgbd_sync: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/rgbd_sync subscribed to (approx sync):
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info[0m
+[33m[ WARN] [1622679573.582394444]: /rtabmap/rtabmapviz: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). If topics are not published at the same rate, you could increase "queue_size" parameter (current=200).
+/rtabmap/rtabmapviz subscribed to (approx sync):
+   /odom \
+   /rtabmap/rgbd_image \
+   /scan[0m
+[33m[ WARN] [1622679576.479637299]: /rtabmap/rgbd_sync: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/rgbd_sync subscribed to (approx sync):
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info[0m
+[33m[ WARN] [1622679578.582578121]: /rtabmap/rtabmapviz: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). If topics are not published at the same rate, you could increase "queue_size" parameter (current=200).
+/rtabmap/rtabmapviz subscribed to (approx sync):
+   /odom \
+   /rtabmap/rgbd_image \
+   /scan[0m
+[33m[ WARN] [1622679581.479822167]: /rtabmap/rgbd_sync: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/rgbd_sync subscribed to (approx sync):
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info[0m
+[33m[ WARN] [1622679583.582787340]: /rtabmap/rtabmapviz: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). If topics are not published at the same rate, you could increase "queue_size" parameter (current=200).
+/rtabmap/rtabmapviz subscribed to (approx sync):
+   /odom \
+   /rtabmap/rgbd_image \
+   /scan[0m
+[33m[ WARN] [1622679585.603415550]: rtabmap: Parameters subscribe_depth and subscribe_rgbd cannot be true at the same time. Parameter subscribe_depth is set to false.[0m
+[33m[ WARN] [1622679586.480079129]: /rtabmap/rgbd_sync: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. 
+/rtabmap/rgbd_sync subscribed to (approx sync):
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info[0m
+[33m[ WARN] [1622679588.583065318]: /rtabmap/rtabmapviz: Did not receive data since 5 seconds! Make sure the input topics are published ("$ rostopic hz my_topic") and the timestamps in their header are set. If topics are coming from different computers, make sure the clocks of the computers are synchronized ("ntpdate"). If topics are not published at the same rate, you could increase "queue_size" parameter (current=200).
+/rtabmap/rtabmapviz subscribed to (approx sync):
+   /odom \
+   /rtabmap/rgbd_image \
+   /scan[0m
+type is rtabmap_ros/point_cloud_xyzrgb
+[0m[ INFO] [1622679561.489178711]: Approximate time sync = true[0m
+[0m[ INFO] [1622679561.404702896]: Starting node...[0m
+[0m[ INFO] [1622679561.511067458]: Initializing nodelet with 4 worker threads.[0m
+[0m[ INFO] [1622679561.633366686]: /rtabmap/rtabmap(maps): map_filter_radius          = 0.000000[0m
+[0m[ INFO] [1622679561.633395499]: /rtabmap/rtabmap(maps): map_filter_angle           = 30.000000[0m
+[0m[ INFO] [1622679561.633404275]: /rtabmap/rtabmap(maps): map_cleanup                = true[0m
+[0m[ INFO] [1622679561.633411423]: /rtabmap/rtabmap(maps): map_always_update          = false[0m
+[0m[ INFO] [1622679561.633417965]: /rtabmap/rtabmap(maps): map_empty_ray_tracing      = true[0m
+[0m[ INFO] [1622679561.633424607]: /rtabmap/rtabmap(maps): cloud_output_voxelized     = true[0m
+[0m[ INFO] [1622679561.633431182]: /rtabmap/rtabmap(maps): cloud_subtract_filtering   = false[0m
+[0m[ INFO] [1622679561.633438692]: /rtabmap/rtabmap(maps): cloud_subtract_filtering_min_neighbors = 2[0m
+[0m[ INFO] [1622679561.644679798]: /rtabmap/rtabmap(maps): octomap_tree_depth         = 16[0m
+[0m[ INFO] [1622679561.670769141]: rtabmap: frame_id      = base_link[0m
+[0m[ INFO] [1622679561.670848581]: rtabmap: map_frame_id  = map[0m
+[0m[ INFO] [1622679561.670890667]: rtabmap: use_action_for_goal  = true[0m
+[0m[ INFO] [1622679561.670931189]: rtabmap: tf_delay      = 0.050000[0m
+[0m[ INFO] [1622679561.670973863]: rtabmap: tf_tolerance  = 0.100000[0m
+[0m[ INFO] [1622679561.671011078]: rtabmap: odom_sensor_sync   = false[0m
+[0m[ INFO] [1622679561.857198418]: Setting RTAB-Map parameter "Mem/IncrementalMemory"="true"[0m
+[0m[ INFO] [1622679561.857540317]: Setting RTAB-Map parameter "Mem/InitWMWithAllNodes"="false"[0m
+[0m[ INFO] [1622679561.905108723]: Setting RTAB-Map parameter "RGBD/AngularUpdate"="0.01"[0m
+[0m[ INFO] [1622679561.911683042]: Setting RTAB-Map parameter "RGBD/LinearUpdate"="0.01"[0m
+[0m[ INFO] [1622679561.924795523]: Setting RTAB-Map parameter "RGBD/OptimizeFromGraphEnd"="true"[0m
+[0m[ INFO] [1622679561.931008291]: Setting RTAB-Map parameter "RGBD/ProximityBySpace"="false"[0m
+[0m[ INFO] [1622679561.941959159]: Setting RTAB-Map parameter "Reg/Force3DoF"="true"[0m
+[0m[ INFO] [1622679562.056875274]: Setting RTAB-Map parameter "Vis/MinInliers"="12"[0m
+[0m[ INFO] [1622679562.240603653]: Setting "Grid/RangeMax" parameter to 0 (default 5.000000) as "subscribe_scan" or "subscribe_scan_cloud" is true and Grid/FromDepth is false.[0m
+[0m[ INFO] [1622679562.248185435]: RTAB-Map detection rate = 1.000000 Hz[0m
+[0m[ INFO] [1622679562.248276880]: rtabmap: Using database from "/home/jetli/.ros/rtabmap.db" (690 MB).[0m
+[0m[ INFO] [1622679584.506341067]: rtabmap: 2D occupancy grid map loaded (389x459).[0m
+[0m[ INFO] [1622679585.585313139]: rtabmap: Database version = "0.20.7".[0m
+[0m[ INFO] [1622679585.606115716]: /rtabmap/rtabmap: subscribe_depth = false[0m
+[0m[ INFO] [1622679585.606150725]: /rtabmap/rtabmap: subscribe_rgb = false[0m
+[0m[ INFO] [1622679585.606166380]: /rtabmap/rtabmap: subscribe_stereo = false[0m
+[0m[ INFO] [1622679585.606181730]: /rtabmap/rtabmap: subscribe_rgbd = true (rgbd_cameras=1)[0m
+[0m[ INFO] [1622679585.606200571]: /rtabmap/rtabmap: subscribe_odom_info = false[0m
+[0m[ INFO] [1622679585.606219626]: /rtabmap/rtabmap: subscribe_user_data = false[0m
+[0m[ INFO] [1622679585.606246096]: /rtabmap/rtabmap: subscribe_scan = true[0m
+[0m[ INFO] [1622679585.606271794]: /rtabmap/rtabmap: subscribe_scan_cloud = false[0m
+[0m[ INFO] [1622679585.606287257]: /rtabmap/rtabmap: subscribe_scan_descriptor = false[0m
+[0m[ INFO] [1622679585.606306742]: /rtabmap/rtabmap: queue_size    = 200[0m
+[0m[ INFO] [1622679585.606472196]: /rtabmap/rtabmap: approx_sync   = true[0m
+[0m[ INFO] [1622679585.606675675]: Setup rgbd callback[0m
+[0m[ INFO] [1622679585.613973305]: 
+/rtabmap/rtabmap subscribed to (approx sync):
+   /odom \
+   /rtabmap/rgbd_image \
+   /scan[0m
+[0m[ INFO] [1622679585.771315260]: rtabmap 0.20.7 started...[0m
+rtabmap: Saving database/long-term memory... (located at /home/jetli/.ros/rtabmap.db)
+rtabmap: 2D occupancy grid map savtype is rtabmap_ros/rgbd_sync
+[0m[ INFO] [1622679561.437972482]: /rtabmap/rgbd_sync: approx_sync = true[0m
+[0m[ INFO] [1622679561.442404219]: /rtabmap/rgbd_sync: queue_size  = 200[0m
+[0m[ INFO] [1622679561.442428705]: /rtabmap/rgbd_sync: depth_scale = 1.000000[0m
+[0m[ INFO] [1622679561.442437285]: /rtabmap/rgbd_sync: decimation = 1[0m
+[0m[ INFO] [1622679561.442446325]: /rtabmap/rgbd_sync: compressed_rate = 0.000000[0m
+[0m[ INFO] [1622679561.479012941]: 
+/rtabmap/rgbd_sync subscribed to (approx sync):
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info[0m
+[0m[ INFO] [1622679561.493516155]: Starting node...[0m
+[0m[ INFO] [1622679561.786814991]: rtabmapviz: Using configuration from "/home/jetli/.ros/rtabmap_gui.ini"[0m
+[0m[ INFO] [1622679563.078388908]: Reading parameters from the ROS server...[0m
+[0m[ INFO] [1622679563.260999429]: Parameters read = 0[0m
+[0m[ INFO] [1622679563.566087150]: /rtabmap/rtabmapviz: subscribe_depth = false[0m
+[0m[ INFO] [1622679563.566113385]: /rtabmap/rtabmapviz: subscribe_rgb = false[0m
+[0m[ INFO] [1622679563.566122320]: /rtabmap/rtabmapviz: subscribe_stereo = false[0m
+[0m[ INFO] [1622679563.566130319]: /rtabmap/rtabmapviz: subscribe_rgbd = true (rgbd_cameras=1)[0m
+[0m[ INFO] [1622679563.566138258]: /rtabmap/rtabmapviz: subscribe_odom_info = false[0m
+[0m[ INFO] [1622679563.566151386]: /rtabmap/rtabmapviz: subscribe_user_data = false[0m
+[0m[ INFO] [1622679563.566158497]: /rtabmap/rtabmapviz: subscribe_scan = true[0m
+[0m[ INFO] [1622679563.566165540]: /rtabmap/rtabmapviz: subscribe_scan_cloud = false[0m
+[0m[ INFO] [1622679563.566172506]: /rtabmap/rtabmapviz: subscribe_scan_descriptor = false[0m
+[0m[ INFO] [1622679563.566179463]: /rtabmap/rtabmapviz: queue_size    = 200[0m
+[0m[ INFO] [1622679563.566186227]: /rtabmap/rtabmapviz: approx_sync   = true[0m
+[0m[ INFO] [1622679563.566207552]: Setup rgbd callback[0m
+[0m[ INFO] [1622679563.580613081]: 
+/rtabmap/rtabmapviz subscribed to (approx sync):
+   /odom \
+   /rtabmap/rgbd_image \
+   /scan[0m
+[0m[ INFO] [1622679563.580706590]: rtabmapviz started.[0m
+[0m[ INFO] [1622679588.587838876]: rtabmapviz: ctrl-c catched! Exiting Qt app...[0m
+ed.
+rtabmap: Saving database/long-term memory...done! (located at /home/jetli/.ros/rtabmap.db, 690 MB)
+... logging to /home/jetli/.ros/log/56c141da-c401-11eb-9e27-e470b8fd3793/roslaunch-work-26349.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_bringup/launch/scout_rtab_bk.launch
+[1mstarted roslaunch server http://work:35513/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /points_xyzrgb/approx_sync: True
+ * /points_xyzrgb/decimation: 4.0
+ * /points_xyzrgb/voxel_size: 0.0
+ * /rosdistro: melodic
+ * /rosversion: 1.14.10
+ * /rtabmap/rgbd_sync/approx_sync: True
+ * /rtabmap/rgbd_sync/decimation: 1.0
+ * /rtabmap/rgbd_sync/depth_scale: 1.0
+ * /rtabmap/rgbd_sync/queue_size: 200
+ * /rtabmap/rtabmap/Mem/IncrementalMemory: true
+ * /rtabmap/rtabmap/Mem/InitWMWithAllNodes: false
+ * /rtabmap/rtabmap/RGBD/AngularUpdate: 0.01
+ * /rtabmap/rtabmap/RGBD/LinearUpdate: 0.01
+ * /rtabmap/rtabmap/RGBD/OptimizeFromGraphEnd: true
+ * /rtabmap/rtabmap/RGBD/ProximityBySpace: false
+ * /rtabmap/rtabmap/Reg/Force3DoF: true
+ * /rtabmap/rtabmap/Vis/MinInliers: 12
+ * /rtabmap/rtabmap/approx_sync: True
+ * /rtabmap/rtabmap/config_path: 
+ * /rtabmap/rtabmap/database_path: ~/.ros/rtabmap.db
+ * /rtabmap/rtabmap/frame_id: base_link
+ * /rtabmap/rtabmap/ground_truth_base_frame_id: 
+ * /rtabmap/rtabmap/ground_truth_frame_id: 
+ * /rtabmap/rtabmap/landmark_angular_variance: 9999.0
+ * /rtabmap/rtabmap/landmark_linear_variance: 0.0001
+ * /rtabmap/rtabmap/map_frame_id: map
+ * /rtabmap/rtabmap/odom_frame_id: 
+ * /rtabmap/rtabmap/odom_sensor_sync: False
+ * /rtabmap/rtabmap/odom_tf_angular_variance: 1.0
+ * /rtabmap/rtabmap/odom_tf_linear_variance: 1.0
+ * /rtabmap/rtabmap/publish_tf: True
+ * /rtabmap/rtabmap/queue_size: 200
+ * /rtabmap/rtabmap/subscribe_depth: True
+ * /rtabmap/rtabmap/subscribe_rgb: True
+ * /rtabmap/rtabmap/subscribe_rgbd: True
+ * /rtabmap/rtabmap/subscribe_scan: True
+ * /rtabmap/rtabmap/subscribe_user_data: False
+ * /rtabmap/rtabmap/use_action_for_goal: True
+ * /rtabmap/rtabmap/wait_for_transform_duration: 0.2
+ * /rtabmap/rtabmapviz/approx_sync: True
+ * /rtabmap/rtabmapviz/frame_id: base_link
+ * /rtabmap/rtabmapviz/odom_frame_id: 
+ * /rtabmap/rtabmapviz/queue_size: 200
+ * /rtabmap/rtabmapviz/subscribe_depth: True
+ * /rtabmap/rtabmapviz/subscribe_rgbd: True
+ * /rtabmap/rtabmapviz/subscribe_scan: True
+ * /rtabmap/rtabmapviz/wait_for_transform_duration: 0.2
+
+NODES
+  /
+    points_xyzrgb (nodelet/nodelet)
+    rviz (rviz/rviz)
+  /rtabmap/
+    rgbd_sync (nodelet/nodelet)
+    rtabmap (rtabmap_ros/rtabmap)
+    rtabmapviz (rtabmap_ros/rtabmapviz)
+
+auto-starting new master
+[1mprocess[master]: started with pid [26362][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/home/jetli/Files/Courses/Mobile_Robots/scout_mini_ws/src/scout_mini_ros/scout_bringup/launch/scout_rtab_bk.launch http://localhost:11311
+[1msetting /run_id to 56c141da-c401-11eb-9e27-e470b8fd3793[0m
+[1mprocess[rosout-1]: started with pid [26374][0m
+started core service [/rosout]
+[1mprocess[rtabmap/rgbd_sync-2]: started with pid [26381][0m
+[1mprocess[rtabmap/rtabmap-3]: started with pid [26382][0m
+[1mprocess[rtabmap/rtabmapviz-4]: started with pid [26383][0m
+[1mprocess[rviz-5]: started with pid [26389][0m
+[1mprocess[points_xyzrgb-6]: started with pid [26390][0m
+[points_xyzrgb-6] killing on exit
+[rtabmap/rtabmapviz-4] killing on exit
+[rviz-5] killing on exit
+[rtabmap/rtabmap-3] killing on exit
+[rtabmap/rgbd_sync-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

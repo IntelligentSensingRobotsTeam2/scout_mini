@@ -37,10 +37,10 @@ class SmartCarKeyboardTeleopNode
             pub_ = n_.advertise<geometry_msgs::Twist>("cmd_vel", 1);
 
             ros::NodeHandle n_private("~");
-            n_private.param("walk_vel", walk_vel_, 0.2);
-            n_private.param("run_vel", run_vel_, 0.35);
-            n_private.param("yaw_rate", yaw_rate_, 0.15);
-            n_private.param("yaw_rate_run", yaw_rate_run_, 0.25);
+            n_private.param("walk_vel", walk_vel_, 0.4);
+            n_private.param("run_vel", run_vel_, 0.6);
+            n_private.param("yaw_rate", yaw_rate_, 0.25);
+            n_private.param("yaw_rate_run", yaw_rate_run_, 0.45);
 
             // n_private.param("walk_vel", walk_vel_, 2.0);
             // n_private.param("run_vel", run_vel_, 4.0);

@@ -55,6 +55,8 @@
 
     <!-- 伪激光信息绑定到深度相机的camera_link上 -->
     <!-- <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" args="0.0 0.0 0.0 0.0 0.0 0.0 /camera_link /fake_laser 20" /> -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" 
+        args="0.175 0.0 0.07785 0.0 0.0 0.0 /camera_link /laser 20" /> -->
     <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" 
-        args="0.175 0.0 0.07785 0.0 0.0 0.0 /camera_link /laser 20" />
+        args="0.175 0.0 0.07785 3.1415926 0.0 0.0 /camera_link /laser 20" />        
 </launch>

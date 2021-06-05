@@ -30,9 +30,8 @@ namespace navi_multi_goals_pub_rviz_plugin {
                                                                      boost::bind(&MultiNaviGoalsPanel::statusCB, this,
                                                                                  _1));
 
-        // goal_pub_ = nh_.advertise<geometry_msgs::PoseStamped>("move_base_simple/goal", 1);
-        //- If we use rtabmap, advertise to 'rtabmap/goal' instead.
-        goal_pub_ = nh_.advertise<geometry_msgs::PoseStamped>("rtabmap/goal", 1);
+        goal_pub_ = nh_.advertise<geometry_msgs::PoseStamped>("move_base_simple/goal", 1);
+        // goal_pub_ = nh_.advertise<geometry_msgs::PoseStamped>("rtabmap/goal", 1);
 
         cancel_pub_ = nh_.advertise<actionlib_msgs::GoalID>("move_base/cancel", 1);
 

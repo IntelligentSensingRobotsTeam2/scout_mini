@@ -4,7 +4,7 @@ Offset_x: 0             #X方向偏置
 Offset_y: 0             #Y方向偏置
 
 FrameRateEnable: true   #使能
-FrameRate: 1           #帧率
+FrameRate: 6           #帧率
 
 ExposureTime: 50000      #曝光时间
 GammaEnable: true

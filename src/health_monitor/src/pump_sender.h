@@ -8,7 +8,7 @@
 #include <termios.h>
 #include <unistd.h>
 
-int main() {
+int open() {
   int USB = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY);
 
   struct termios tty;

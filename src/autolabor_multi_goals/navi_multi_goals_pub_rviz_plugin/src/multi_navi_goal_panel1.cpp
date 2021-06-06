@@ -30,7 +30,7 @@ namespace navi_multi_goals_pub_rviz_plugin {
                                                                      boost::bind(&MultiNaviGoalsPanel::statusCB, this,
                                                                                  _1));
         //- TODO: multi_navi.cpp 需要接收该topic
-        // goal_pub_ = nh_.advertise<geometry_msgs::PoseStamped>("move_base_simple/goal", 1);
+        goal_pub_ = nh_.advertise<geometry_msgs::PoseStamped>("move_base_simple/goal", 1);
         goal_pub_2 = nh_.advertise<std_msgs::String>("move_base_multi_navi", 1);
         // goal_pub_ = nh_.advertise<geometry_msgs::PoseStamped>("rtabmap/goal", 1);
 
@@ -207,7 +207,7 @@ namespace navi_multi_goals_pub_rviz_plugin {
             geometry_msgs::PoseStamped goal;
             goal.header = pose_array_.header;
             goal.pose = pose_array_.poses.at(curGoalIdx_);
-            // goal_pub_.publish(goal);
+            goal_pub_.publish(goal);
             //- 给自建的导航节点发布启动信息
             std_msgs::String msg;
             std::stringstream ss;
@@ -232,7 +232,7 @@ namespace navi_multi_goals_pub_rviz_plugin {
             geometry_msgs::PoseStamped goal;
             goal.header = pose_array_.header;
             goal.pose = pose_array_.poses.at(curGoalIdx_);
-            // goal_pub_.publish(goal);
+            goal_pub_.publish(goal);
             ROS_INFO("Navi to the Goal%d", curGoalIdx_ + 1);
             poseArray_table_->item(curGoalIdx_, 0)->setBackgroundColor(QColor(255, 69, 0));
             poseArray_table_->item(curGoalIdx_, 1)->setBackgroundColor(QColor(255, 69, 0));
@@ -251,7 +251,7 @@ namespace navi_multi_goals_pub_rviz_plugin {
             geometry_msgs::PoseStamped goal;
             goal.header = pose_array_.header;
             goal.pose = pose_array_.poses.at(curGoalIdx_ % pose_array_.poses.size());
-            // goal_pub_.publish(goal);
+            goal_pub_.publish(goal);
             ROS_INFO("Navi to the Goal%lu, in the %dth cycle", curGoalIdx_ % pose_array_.poses.size() + 1,
                      cycleCnt_ + 1);
             bool even = ((cycleCnt_ + 1) % 2 != 0);

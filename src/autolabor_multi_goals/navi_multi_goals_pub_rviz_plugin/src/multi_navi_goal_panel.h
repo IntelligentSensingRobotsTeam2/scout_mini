@@ -71,7 +71,7 @@ namespace navi_multi_goals_pub_rviz_plugin {
 
         // The ROS node handle.
         ros::NodeHandle nh_;
-        ros::Publisher goal_pub_, cancel_pub_, marker_pub_;
+        ros::Publisher goal_pub_, cancel_pub_, marker_pub_, goal_pub_2;
         ros::Subscriber goal_sub_, status_sub_;
 
 

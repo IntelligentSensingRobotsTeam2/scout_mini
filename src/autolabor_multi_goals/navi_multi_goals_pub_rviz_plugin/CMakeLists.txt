@@ -40,6 +40,11 @@ set(SOURCE_FILES
   ${MOC_FILES}
 )
 
+# set(SOURCE_FILES
+#   src/multi_navi_goal_panel2.cpp
+#   ${MOC_FILES}
+# )
+
 ## An rviz plugin is just a shared library, so here we declare the
 ## library to be called ``${PROJECT_NAME}`` (which is
 ## "rviz_plugin_tutorials", or whatever your version of this project

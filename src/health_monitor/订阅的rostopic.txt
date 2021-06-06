@@ -1,14 +1,21 @@
 所有的rostopic都用string格式
 
-1. camera_angle（up，down）
+1. camera_angle （up，down）
     控制口罩检测摄像头角度
     为up时角度抬升
     为down时角度降低
-2. pump_start（0，1）
+2. pump_start （0，1）
     控制洒水
     为0时洒水关闭
     为1时洒水开启
-3. robot_walk（0，1）
+3. robot_walk （0，1）
     控制机器人运动
     为0时机器人停止
     为1时机器人自动在固定路线上巡航
+4. go_to_dest （由邓森发布，伟力订阅）
+    控制小车去往目的地
+    调用之前保证小车已经停止
+
+5. arrive_dest （由伟力发布，邓森订阅）
+    告诉小车已经到达目的地
+    到达目的地之后小车会继续自动巡航

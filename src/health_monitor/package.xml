@@ -11,8 +11,12 @@
   <build_depend>roscpp</build_depend>
   <build_export_depend>roscpp</build_export_depend>
   <exec_depend>roscpp</exec_depend>
+  <!-- <exec_depend>actionlib</exec_depend> -->
+  <!-- <exec_depend>move_base_msgs</exec_depend> -->
   <depend>sensor_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>actionlib</depend>
+  <depend>move_base_msgs</depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

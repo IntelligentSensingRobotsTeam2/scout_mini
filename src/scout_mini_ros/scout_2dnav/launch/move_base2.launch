@@ -1,0 +1,26 @@
+<!-- 修改自 src/scout_mini_ros/scout_2dnav/launch/move_base.launch -->
+<!-- 使用 turtlebot 的导航配置 -->
+<launch>
+    <arg name="move_forward_only" default="true"/>
+    <master auto="start"/>
+
+    <!-- move_base -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+
+        <rosparam file="$(find scout_2dnav)/config3/costmap_common_params.yaml" command="load" ns="global_costmap" />
+
+        <rosparam file="$(find scout_2dnav)/config3/costmap_common_params.yaml" command="load" ns="local_costmap" />
+
+        <rosparam file="$(find scout_2dnav)/config3/local_costmap_params.yaml" command="load" />
+
+        <rosparam file="$(find scout_2dnav)/config3/global_costmap_params.yaml" command="load" />
+
+        <rosparam file="$(find scout_2dnav)/config3/move_base_params.yaml" command="load" />
+
+        <rosparam file="$(find scout_2dnav)/config3/dwa_local_planner_params.yaml" command="load" />
+
+        <param name="DWAPlannerROS/min_vel_x" value="0.0" if="$(arg move_forward_only)" />
+    </node>
+
+</launch>

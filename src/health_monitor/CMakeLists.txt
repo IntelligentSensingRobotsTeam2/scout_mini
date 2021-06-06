@@ -11,6 +11,8 @@ set(catkin_deps
   sensor_msgs
   roscpp
   geometry_msgs
+  actionlib
+  move_base_msgs
   )
 find_package(catkin REQUIRED COMPONENTS
   ${catkin_deps}
@@ -38,3 +40,6 @@ include_directories(
 
 add_executable(hm_controller src/hm_controller.cpp)
 target_link_libraries(hm_controller ${catkin_LIBRARIES})
+
+# add_executable(multi_navi src/multi_navi.cpp)
+# target_link_libraries(multi_navi ${catkin_LIBRARIES})

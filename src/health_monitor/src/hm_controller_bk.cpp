@@ -8,7 +8,7 @@
 #include <std_msgs/String.h>
 
 #include <pthread.h>
-ros::NodeHandle* n;
+
 //- 是否允许添加导航目标点
 bool add_point = true;
 //- 机器人是否停止
@@ -19,7 +19,6 @@ MyMBClient *multi_navi_client;
 Pump *pump_sender;
 
 void pump_state_cb(const std_msgs::String::ConstPtr &msg) {
-  // system("rostopic pub /arrive_dest std_msgs/String \"data: 's'\"");
   ROS_INFO("**pump_state_cb receive: [%s]", msg->data.c_str());
   if (strcmp(msg->data.c_str(), "0") == 0) {
     //- 关闭水泵
@@ -41,12 +40,6 @@ void camera_angle_cb(const std_msgs::String::ConstPtr &msg) {
   }
 }
 void *run_navi_node(void *ptr) {
-  multi_navi_client->start_navi();
-  return NULL;
-}
-
-void *run_navi_node2(void *ptr) {
-  // sleep(5);
   multi_navi_client->start_navi();
   return NULL;
 }
@@ -91,44 +84,39 @@ void navi_point_cb(const geometry_msgs::PoseStamped::ConstPtr &pose) {
   }
 }
 
-//- 问路回调
-void go_to_dest_cb(const std_msgs::String::ConstPtr &msg1) {
-  multi_navi_client->go_to_point(1);
-  
-  // std_msgs::String msg;
-  // std::stringstream ss;
-  // ss << "hello world ";
-  // msg.data = ss.str();
-  // ros::Publisher pub_arrive = n->advertise<std_msgs::String>("arrive_dest", 100);
-  system("rostopic pub /arrive_dest std_msgs/String \"data: 's'\"");
-  ROS_INFO("SEND OK");
-  
-  is_robot_stop = false;
-
-  pthread_t tid;
-  pthread_create(&tid, NULL, run_navi_node2, NULL);
-}
+// void go_to_dest_cb(const std_msgs::String::ConstPtr &msg1) {
+//   multi_navi_client->go_to_point(2);
+//   ros::Publisher pub_arrive = n.advertise<std_msgs::String>("arrive_dest", 100);
+//   std_msgs::String msg;
+//   std::stringstream ss;
+//   ss << "hello world ";
+//   msg.data = ss.str();
+//   pub_arrive.publish(msg);
+//   is_robot_stop = false;
+//   pthread_t tid;
+//   pthread_create(&tid, NULL, run_navi_node, NULL);
+// }
 
 int main(int argc, char **argv) {
   ros::init(argc, argv, "hm_controller");
   multi_navi_client = new MyMBClient();
   pump_sender = new Pump();
-  n = new ros::NodeHandle();
-
+  ros::NodeHandle n;
+  
   ros::Subscriber sub_pump_state =
-      n->subscribe("pump_start", 1000, pump_state_cb);
+      n.subscribe("pump_start", 1000, pump_state_cb);
   ros::Subscriber sub_camera_angle =
-      n->subscribe("camera_angle", 1000, camera_angle_cb);
+      n.subscribe("camera_angle", 1000, camera_angle_cb);
   ros::Subscriber sub_robot_walk =
-      n->subscribe("robot_walk", 1000, robot_walk_cb);
+      n.subscribe("robot_walk", 1000, robot_walk_cb);
 
   ros::Subscriber sub_multi_navi =
-      n->subscribe("move_base_multi_navi", 1000, start_multi_navi);
+      n.subscribe("move_base_multi_navi", 1000, start_multi_navi);
 
-  ros::Subscriber sub_navi_point = n->subscribe<geometry_msgs::PoseStamped>(
+  ros::Subscriber sub_navi_point = n.subscribe<geometry_msgs::PoseStamped>(
       "move_base_simple/goal_temp", 1000, navi_point_cb);
 
-  ros::Subscriber sub_to_dest = n->subscribe("go_to_dest", 100, go_to_dest_cb);
+  // ros::Subscriber sub_to_dest = n.subscribe("go_to_dest", 100, go_to_dest_cb);
 
   ros::spin();
 

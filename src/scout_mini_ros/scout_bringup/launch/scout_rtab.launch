@@ -9,7 +9,7 @@
   <arg name="rviz" default="true" />
 
   <!-- Localization-only mode -->
-  <arg name="localization" default="false"/>
+  <arg name="localization" default="true"/>
 
   <!-- sim time for convenience, if playing a rosbag -->
   <arg name="use_sim_time" default="false"/>

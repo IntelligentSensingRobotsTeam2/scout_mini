@@ -58,5 +58,9 @@
     <!-- <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" 
         args="0.175 0.0 0.07785 0.0 0.0 0.0 /camera_link /laser 20" /> -->
     <node pkg="tf" type="static_transform_publisher" name="camera_link_to_laser" 
-        args="0.175 0.0 0.07785 3.1415926 0.0 0.0 /camera_link /laser 20" />        
+        args="0.175 0.0 0.07785 3.1415926 0.0 0.0 /camera_link /laser 20" />     
+
+    <include file="$(find scout_bringup)/launch/scout_rtab.launch" />   
+    <include file="$(find scout_2dnav)/launch/move_base.launch" />
+    <include file="$(find hikrobot_camera)/launch/hikrobot_camera.launch" />
 </launch>

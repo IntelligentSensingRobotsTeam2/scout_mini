@@ -100,27 +100,28 @@ public:
       spot += n_written;
     } while (cmd[spot - 1] != '\n' && n_written > 0);
 
-    //- Start reading
-    int n = 0, spot2 = 0;
-    char buf = '\0';
+    // //- Start reading
+    // int n = 0, spot2 = 0;
+    // char buf = '\0';
 
-    /* Whole response*/
-    char response[1024];
-    memset(response, '\0', sizeof response);
+    // /* Whole response*/
+    // char response[1024];
+    // memset(response, '\0', sizeof response);
 
-    do {
-      n = read(fd, &buf, 1);
-      sprintf(&response[spot2], "%c", buf);
-      spot2 += n;
-    } while (buf != '\n' && n > 0);
+    // do {
+    //   n = read(fd, &buf, 1);
+    //   sprintf(&response[spot2], "%c", buf);
+    //   spot2 += n;
+    // } while (buf != '\n' && n > 0);
+    // // } while (n > 0);
 
-    if (n < 0) {
-      std::cout << "Error reading: " << strerror(errno) << std::endl;
-    } else if (n == 0) {
-      std::cout << "Read nothing!" << std::endl;
-    } else {
-      std::cout << "Response: " << response << std::endl;
-    }
+    // if (n < 0) {
+    //   std::cout << "Error reading: " << strerror(errno) << std::endl;
+    // } else if (n == 0) {
+    //   std::cout << "Read nothing!" << std::endl;
+    // } else {
+    //   std::cout << "Response: " << response << std::endl;
+    // }
     return 0;
   }
 };

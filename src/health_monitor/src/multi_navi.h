@@ -30,16 +30,21 @@ public:
   ~MyMBClient() { delete mbc; }
 
   void add_point(const geometry_msgs::PoseStamped::ConstPtr &input_pose) {
-    // move_base_msgs::MoveBaseGoal temp;
-    // temp.target_pose.header = input_pose->header;
-    // temp.target_pose.pose = input_pose->pose;
-    // points.push_back(temp);
+    move_base_msgs::MoveBaseGoal temp;
+    temp.target_pose.header = input_pose->header;
+    temp.target_pose.pose = input_pose->pose;
+    points.push_back(temp);
+  }
+
+  void go_to_point(int pos) {
+    actionlib::SimpleClientGoalState st = mbc->sendGoalAndWait(points[pos]);
   }
 
   void update_goals() {
     geometry_msgs::PoseStamped poses[8];
     for (int i = 0; i < 8; i++) {
       poses[i].header.seq = i;
+      poses[i].header.stamp = ros::Time::now();
       poses[i].header.frame_id = "map";
       poses[i].pose.position.z = 0.0;
       poses[i].pose.orientation.x = 0.0;
@@ -52,46 +57,46 @@ public:
     poses[0].pose.orientation.w = 0.208371518052;
 
     // point 1
-    poses[0].pose.position.x = -3.3362865448;
-    poses[0].pose.position.y = 2.83931541443;
-    poses[0].pose.orientation.z = 0.873498456754;
-    poses[0].pose.orientation.w = -0.486826915904;
+    poses[1].pose.position.x = -3.3362865448;
+    poses[1].pose.position.y = 2.83931541443;
+    poses[1].pose.orientation.z = 0.873498456754;
+    poses[1].pose.orientation.w = -0.486826915904;
 
     // point 2
-    poses[0].pose.position.x = -3.49701356888;
-    poses[0].pose.position.y = 1.80556762218;
-    poses[0].pose.orientation.z = -0.390330174908;
-    poses[0].pose.orientation.w = 0.920674945111;
+    poses[2].pose.position.x = -3.49701356888;
+    poses[2].pose.position.y = 1.80556762218;
+    poses[2].pose.orientation.z = -0.390330174908;
+    poses[2].pose.orientation.w = 0.920674945111;
 
     // point 3
-    poses[0].pose.position.x = -2.51073765755;
-    poses[0].pose.position.y = 0.796154260635;
-    poses[0].pose.orientation.z = -0.240420147513;
-    poses[0].pose.orientation.w = 0.970668920214;
+    poses[3].pose.position.x = -2.51073765755;
+    poses[3].pose.position.y = 0.796154260635;
+    poses[3].pose.orientation.z = -0.240420147513;
+    poses[3].pose.orientation.w = 0.970668920214;
 
     // point 4
-    poses[0].pose.position.x = -1.4834010601;
-    poses[0].pose.position.y = 0.0788714885712;
-    poses[0].pose.orientation.z = -0.183088773279;
-    poses[0].pose.orientation.w = 0.98309638444;
+    poses[4].pose.position.x = -1.4834010601;
+    poses[4].pose.position.y = 0.0788714885712;
+    poses[4].pose.orientation.z = -0.183088773279;
+    poses[4].pose.orientation.w = 0.98309638444;
 
     // point 5
-    poses[0].pose.position.x = -0.582492828369;
-    poses[0].pose.position.y = -0.0144414901733;
-    poses[0].pose.orientation.z = 0.460476584339;
-    poses[0].pose.orientation.w = 0.887671851123;
+    poses[5].pose.position.x = -0.582492828369;
+    poses[5].pose.position.y = -0.0144414901733;
+    poses[5].pose.orientation.z = 0.460476584339;
+    poses[5].pose.orientation.w = 0.887671851123;
 
     // point 6
-    poses[0].pose.position.x = -0.0586119890213;
-    poses[0].pose.position.y = 1.14768576622;
-    poses[0].pose.orientation.z = 0.961113978492;
-    poses[0].pose.orientation.w = 0.276151987766;
+    poses[6].pose.position.x = -0.0586119890213;
+    poses[6].pose.position.y = 1.14768576622;
+    poses[6].pose.orientation.z = 0.961113978492;
+    poses[6].pose.orientation.w = 0.276151987766;
 
     // point 7
-    poses[0].pose.position.x = -1.12363874912;
-    poses[0].pose.position.y = 2.04735898972;
-    poses[0].pose.orientation.z = 0.969075905743;
-    poses[0].pose.orientation.w = 0.246762819138;
+    poses[7].pose.position.x = -1.12363874912;
+    poses[7].pose.position.y = 2.04735898972;
+    poses[7].pose.orientation.z = 0.969075905743;
+    poses[7].pose.orientation.w = 0.246762819138;
 
     for (int i = 0; i < 8; i++) {
       move_base_msgs::MoveBaseGoal temp;
@@ -104,13 +109,13 @@ public:
   void start_navi() {
     continue_navi = true;
     int len = points.size();
-    int idx = next_visited;
-    next_visited = idx;
+    int idx = next_visited;    
     while (continue_navi) {
       actionlib::SimpleClientGoalState st = mbc->sendGoalAndWait(points[idx]);
       idx++;
       idx = idx % len;
     }
+    next_visited = idx;
   }
 
   void cancel_navi() {
